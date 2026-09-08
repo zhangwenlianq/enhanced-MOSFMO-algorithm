@@ -1,0 +1,33 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "description": "AutoResearch locked-protocol guard",
+        "hooks": [
+          {
+            "command": "\"C:\\Users\\hp\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"D:\\研究生\\博士\\论文\\【TAES】无人机编队多目标重构\\转投TII\\code_re\\.autoresearch\\tools\\research_tool.py\" hook-pre-tool",
+            "commandWindows": "py -3 \"D:\\研究生\\博士\\论文\\【TAES】无人机编队多目标重构\\转投TII\\code_re\\.autoresearch\\tools\\research_tool.py\" hook-pre-tool",
+            "statusMessage": "Checking locked research scope",
+            "timeout": 10,
+            "type": "command"
+          }
+        ],
+        "matcher": ".*"
+      }
+    ],
+    "Stop": [
+      {
+        "description": "AutoResearch autonomous-continuation guard",
+        "hooks": [
+          {
+            "command": "\"C:\\Users\\hp\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"D:\\研究生\\博士\\论文\\【TAES】无人机编队多目标重构\\转投TII\\code_re\\.autoresearch\\tools\\research_tool.py\" hook-stop",
+            "commandWindows": "py -3 \"D:\\研究生\\博士\\论文\\【TAES】无人机编队多目标重构\\转投TII\\code_re\\.autoresearch\\tools\\research_tool.py\" hook-stop",
+            "statusMessage": "Checking autonomous research state",
+            "timeout": 10,
+            "type": "command"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "active_experiment": {
+    "candidate_id": "C003-collective-scent-field",
+    "code_reference": "sha256:4a3c2762ef3514fb8ff37a45ed071f9a5142f0d5a6ec3f4ef9f3a40559634721:mosfmo/algorithm.py",
+    "experiment_id": "C003-scent-smoke",
+    "hypothesis_id": "H003-collective-scent-field",
+    "planned_result": "results/smoke/C003-collective-scent-field.json",
+    "stage": "smoke"
+  },
+  "budget_used": {
+    "candidates_evaluated": 2,
+    "diagnostic_objective_vector_evaluations": 25672,
+    "fixed_allowance": 24000,
+    "objective_vector_evaluations": 2101672,
+    "quick_stage": 1728000,
+    "smoke_stage": 324000
+  },
+  "contract_fingerprint": "3e605a2918f27fe21754b5a1a7a94e6e62b19bc7c592d70684d28f0fc4499135",
+  "created_at": "2026-09-08T06:51:45.247508Z",
+  "incumbent": {
+    "candidate_id": "baseline-mo-sfmo",
+    "code_reference": "sha256:e2d68774363bddb9e1ce673333960c5f045b7a839ee9343c1020508ea17f6f1c:research/baselines.py",
+    "result_refs": [
+      "results/static/baseline-static-validation.json",
+      "results/smoke/baseline-mo-sfmo.json",
+      "results/quick/baseline-mo-sfmo.json"
+    ]
+  },
+  "initial_baseline": {
+    "candidate_id": "baseline-mo-sfmo",
+    "code_reference": "sha256:e2d68774363bddb9e1ce673333960c5f045b7a839ee9343c1020508ea17f6f1c:research/baselines.py",
+    "result_refs": [
+      "results/static/baseline-static-validation.json",
+      "results/smoke/baseline-mo-sfmo.json",
+      "results/quick/baseline-mo-sfmo.json"
+    ],
+    "validated": true
+  },
+  "last_completed_action": "Rejected C002 at intermediate stage and implemented C003 vectorized collective scent field",
+  "next_action": "Run C003 scientific quick evidence on schema stage smoke",
+  "phase": "AUTONOMOUS_RESEARCH",
+  "protected_manifest_fingerprint": "1d1b35893e1bf4f9cb71feada8d6bc6c99fb07c0b05fb37eb16f4c4005d6193a",
+  "state_revision": 8,
+  "state_version": "1.0",
+  "terminal": null,
+  "updated_at": "2026-09-08T07:47:00.000000Z"
+}

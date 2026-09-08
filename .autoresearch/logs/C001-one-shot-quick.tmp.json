@@ -1,0 +1,2199 @@
+{
+  "aggregates": {
+    "dascmop1_d30_i4": {
+      "evaluation_count": {
+        "median": 12000.0,
+        "q1": 12000.0,
+        "q3": 12000.0
+      },
+      "feasible_archive_success": {
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "feasible_solution_rate": {
+        "median": 0.35916666666666663,
+        "q1": 0.3449375,
+        "q3": 0.365
+      },
+      "igd_plus": {
+        "median": 0.3070086846004179,
+        "q1": 0.300368154891524,
+        "q3": 0.31267047785007174
+      },
+      "normalized_hv": {
+        "median": 0.32525768489068124,
+        "q1": 0.3219852447721869,
+        "q3": 0.3287114958128944
+      },
+      "normalized_hv_auc": {
+        "median": 0.1615688827135226,
+        "q1": 0.15364536040227078,
+        "q3": 0.19060029504720774
+      },
+      "runtime_seconds": {
+        "median": 0.6330230000021402,
+        "q1": 0.6207563750067493,
+        "q3": 0.6423403000371763
+      }
+    },
+    "dtlz2_m3_d12": {
+      "evaluation_count": {
+        "median": 12000.0,
+        "q1": 12000.0,
+        "q3": 12000.0
+      },
+      "feasible_archive_success": {
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "feasible_solution_rate": {
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "igd_plus": {
+        "median": 0.11158247002165494,
+        "q1": 0.10442181029324767,
+        "q3": 0.11272777958349876
+      },
+      "normalized_hv": {
+        "median": 0.645155506516977,
+        "q1": 0.6327146931463157,
+        "q3": 0.6481590741675565
+      },
+      "normalized_hv_auc": {
+        "median": 0.4641629960357036,
+        "q1": 0.45356937347407766,
+        "q3": 0.4728038724680134
+      },
+      "runtime_seconds": {
+        "median": 1.0267193999898154,
+        "q1": 1.024771550000878,
+        "q3": 1.0293881249963306
+      }
+    },
+    "dtlz7_m3_d22": {
+      "evaluation_count": {
+        "median": 12000.0,
+        "q1": 12000.0,
+        "q3": 12000.0
+      },
+      "feasible_archive_success": {
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "feasible_solution_rate": {
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "igd_plus": {
+        "median": 2.3379260058733635,
+        "q1": 2.3202470531087904,
+        "q3": 2.3629354694686016
+      },
+      "normalized_hv": {
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "normalized_hv_auc": {
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "runtime_seconds": {
+        "median": 1.0336036999942735,
+        "q1": 1.030815474994597,
+        "q3": 1.0375983749690931
+      }
+    },
+    "zdt1_d30": {
+      "evaluation_count": {
+        "median": 12000.0,
+        "q1": 12000.0,
+        "q3": 12000.0
+      },
+      "feasible_archive_success": {
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "feasible_solution_rate": {
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "igd_plus": {
+        "median": 2.1271512235090992,
+        "q1": 1.8811009217231638,
+        "q3": 2.1873509516755494
+      },
+      "normalized_hv": {
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "normalized_hv_auc": {
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "runtime_seconds": {
+        "median": 0.869007800007239,
+        "q1": 0.8663181749579962,
+        "q3": 0.8784289250179427
+      }
+    },
+    "zdt3_d30": {
+      "evaluation_count": {
+        "median": 12000.0,
+        "q1": 12000.0,
+        "q3": 12000.0
+      },
+      "feasible_archive_success": {
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "feasible_solution_rate": {
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "igd_plus": {
+        "median": 1.093747098033385,
+        "q1": 1.0565637092461575,
+        "q3": 1.1156826361068475
+      },
+      "normalized_hv": {
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "normalized_hv_auc": {
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "runtime_seconds": {
+        "median": 0.8431379999965429,
+        "q1": 0.8364629249990685,
+        "q3": 0.8490571250003995
+      }
+    },
+    "zdt4_d10": {
+      "evaluation_count": {
+        "median": 12000.0,
+        "q1": 12000.0,
+        "q3": 12000.0
+      },
+      "feasible_archive_success": {
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "feasible_solution_rate": {
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "igd_plus": {
+        "median": 15.145975517175412,
+        "q1": 13.302543332843877,
+        "q3": 15.880513902285182
+      },
+      "normalized_hv": {
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "normalized_hv_auc": {
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "runtime_seconds": {
+        "median": 0.8045459000277333,
+        "q1": 0.7992793999874266,
+        "q3": 0.8158476000098744
+      }
+    }
+  },
+  "benchmark_runs": [
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt1_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 1.7019483588573396,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.8692433999967761,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5862,
+            "migrate": 5055,
+            "regroup": 983
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.8692433999967761,
+      "seed": 101,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt1_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 1.6440200016980528,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.8764172000228427,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5803,
+            "migrate": 5123,
+            "regroup": 974
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.8764172000228427,
+      "seed": 211,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt1_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.1172119625085832,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.8683815999538638,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5969,
+            "migrate": 5202,
+            "regroup": 729
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.8683815999538638,
+      "seed": 307,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt1_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.181100005240632,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.8601278999703936,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 81,
+          "behavior_counts": {
+            "graze": 5838,
+            "migrate": 5273,
+            "regroup": 789
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.8601278999703936,
+      "seed": 401,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt1_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.1370904845096153,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.895438399980776,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5772,
+            "migrate": 4982,
+            "regroup": 1146
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.895438399980776,
+      "seed": 503,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt1_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.2061037909803005,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.8844641000032425,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5897,
+            "migrate": 5350,
+            "regroup": 653
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.8844641000032425,
+      "seed": 601,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt1_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 1.9408184426784385,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.8442697999998927,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 6059,
+            "migrate": 5226,
+            "regroup": 615
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.8442697999998927,
+      "seed": 701,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt1_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.2194095810620356,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.8687722000177018,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5802,
+            "migrate": 5187,
+            "regroup": 911
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.8687722000177018,
+      "seed": 809,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt3_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 0.878454107572249,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.8219055000226945,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 87,
+          "behavior_counts": {
+            "graze": 5123,
+            "migrate": 4672,
+            "regroup": 2105
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.8219055000226945,
+      "seed": 101,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt3_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 0.9837066539932466,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.8618803999852389,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5079,
+            "migrate": 4373,
+            "regroup": 2448
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.8618803999852389,
+      "seed": 211,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt3_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 1.149101287961477,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.8424427999998443,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 4927,
+            "migrate": 4353,
+            "regroup": 2620
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.8424427999998443,
+      "seed": 307,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt3_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 1.0808493943304611,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.8397766000125557,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 95,
+          "behavior_counts": {
+            "graze": 5034,
+            "migrate": 4427,
+            "regroup": 2439
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.8397766000125557,
+      "seed": 401,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt3_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 1.098810069188887,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.8770318999886513,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5012,
+            "migrate": 4136,
+            "regroup": 2752
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.8770318999886513,
+      "seed": 503,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt3_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 1.1312119960053344,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.8438331999932416,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 94,
+          "behavior_counts": {
+            "graze": 5224,
+            "migrate": 4676,
+            "regroup": 2000
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.8438331999932416,
+      "seed": 601,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt3_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 1.0886841268778833,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.8265218999586068,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5035,
+            "migrate": 4474,
+            "regroup": 2391
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.8265218999586068,
+      "seed": 701,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt3_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 1.110506182807352,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.8447827000054531,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 4994,
+            "migrate": 4413,
+            "regroup": 2493
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.8447827000054531,
+      "seed": 809,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt4_d10",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 15.202063538270595,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.7994805999915116,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 14,
+          "behavior_counts": {
+            "graze": 2628,
+            "migrate": 1552,
+            "regroup": 7720
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.7994805999915116,
+      "seed": 101,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt4_d10",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 15.176660567709927,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.7897566999890842,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 19,
+          "behavior_counts": {
+            "graze": 2666,
+            "migrate": 1754,
+            "regroup": 7480
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.7897566999890842,
+      "seed": 211,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt4_d10",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 11.706860387846492,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.8227911000140011,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 27,
+          "behavior_counts": {
+            "graze": 2721,
+            "migrate": 1607,
+            "regroup": 7572
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.8227911000140011,
+      "seed": 307,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt4_d10",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 23.837175535828333,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.835218199994415,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 21,
+          "behavior_counts": {
+            "graze": 2597,
+            "migrate": 1541,
+            "regroup": 7762
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.835218199994415,
+      "seed": 401,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt4_d10",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 12.363518745126258,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.7986757999751717,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 13,
+          "behavior_counts": {
+            "graze": 2597,
+            "migrate": 1533,
+            "regroup": 7770
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.7986757999751717,
+      "seed": 503,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt4_d10",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 13.61555152874975,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.8038719000178389,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 26,
+          "behavior_counts": {
+            "graze": 2672,
+            "migrate": 1647,
+            "regroup": 7581
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.8038719000178389,
+      "seed": 601,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt4_d10",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 15.115290466640898,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.8135331000084989,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 9,
+          "behavior_counts": {
+            "graze": 2542,
+            "migrate": 1518,
+            "regroup": 7840
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.8135331000084989,
+      "seed": 701,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt4_d10",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 17.915864994328945,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.8052199000376277,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 22,
+          "behavior_counts": {
+            "graze": 2668,
+            "migrate": 1482,
+            "regroup": 7750
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.8052199000376277,
+      "seed": 809,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz2_m3_d12",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 0.11110314993356009,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.6340232296144217,
+        "normalized_hv_auc": 0.43880817453988813,
+        "runtime_seconds": 1.0255938000045717,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5504,
+            "migrate": 4641,
+            "regroup": 1755
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 1.0255938000045717,
+      "seed": 101,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz2_m3_d12",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 0.10348386869335736,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.6468757775440702,
+        "normalized_hv_auc": 0.4819132634913057,
+        "runtime_seconds": 1.0469486000365578,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5537,
+            "migrate": 4702,
+            "regroup": 1661
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 1.0469486000365578,
+      "seed": 211,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz2_m3_d12",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 0.1120617901097498,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.6480982853272258,
+        "normalized_hv_auc": 0.45894649339962024,
+        "runtime_seconds": 1.0223047999897972,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5395,
+            "migrate": 4667,
+            "regroup": 1838
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 1.0223047999897972,
+      "seed": 307,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz2_m3_d12",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 0.11404900118939432,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.6434352354898836,
+        "normalized_hv_auc": 0.4838020619030778,
+        "runtime_seconds": 1.0301324999891222,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5647,
+            "migrate": 4849,
+            "regroup": 1404
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 1.0301324999891222,
+      "seed": 401,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz2_m3_d12",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 0.1047344574932111,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.6483414406885483,
+        "normalized_hv_auc": 0.46937949867178697,
+        "runtime_seconds": 1.0257909999927506,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5712,
+            "migrate": 4775,
+            "regroup": 1413
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 1.0257909999927506,
+      "seed": 503,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz2_m3_d12",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 0.11228737238153358,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.6287890837419976,
+        "normalized_hv_auc": 0.45450547020805016,
+        "runtime_seconds": 1.0291399999987334,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5501,
+            "migrate": 4808,
+            "regroup": 1591
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 1.0291399999987334,
+      "seed": 601,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz2_m3_d12",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 0.10068139788399175,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.6798092064389106,
+        "normalized_hv_auc": 0.46976740879358264,
+        "runtime_seconds": 1.0276477999868803,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5852,
+            "migrate": 4896,
+            "regroup": 1152
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 1.0276477999868803,
+      "seed": 701,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz2_m3_d12",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 0.12257252759934573,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.6225678311771415,
+        "normalized_hv_auc": 0.4507610832721603,
+        "runtime_seconds": 1.0112979999976233,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5559,
+            "migrate": 4917,
+            "regroup": 1424
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 1.0112979999976233,
+      "seed": 809,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz7_m3_d22",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.3832573418538003,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 1.0339621999883093,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5897,
+            "migrate": 5193,
+            "regroup": 810
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 1.0339621999883093,
+      "seed": 101,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz7_m3_d22",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.2771250535054297,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 1.042927599977702,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5837,
+            "migrate": 5028,
+            "regroup": 1035
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 1.042927599977702,
+      "seed": 211,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz7_m3_d22",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.3346210529765776,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 1.0331312000053003,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5764,
+            "migrate": 5096,
+            "regroup": 1040
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 1.0331312000053003,
+      "seed": 307,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz7_m3_d22",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.3364928979930664,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 1.0363678999710828,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5767,
+            "migrate": 4944,
+            "regroup": 1189
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 1.0363678999710828,
+      "seed": 401,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz7_m3_d22",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.3561615120068686,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 1.041289799963124,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5870,
+            "migrate": 5133,
+            "regroup": 897
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 1.041289799963124,
+      "seed": 503,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz7_m3_d22",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.8124095176724997,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 1.0332452000002377,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5780,
+            "migrate": 4966,
+            "regroup": 1154
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 1.0332452000002377,
+      "seed": 601,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz7_m3_d22",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.339359113753661,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 1.0126688999589533,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5657,
+            "migrate": 4996,
+            "regroup": 1247
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 1.0126688999589533,
+      "seed": 701,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz7_m3_d22",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.2180042767712935,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 1.023868299962487,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "behavior_counts": {
+            "graze": 5839,
+            "migrate": 5129,
+            "regroup": 932
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 1.023868299962487,
+      "seed": 809,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dascmop",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 0.3675,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dascmop1_d30_i4",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 0.3675,
+        "igd_plus": 0.31213434506524773,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.3236637778672224,
+        "normalized_hv_auc": 0.19296049771386295,
+        "runtime_seconds": 0.6066792000201531,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 13,
+          "behavior_counts": {
+            "graze": 5374,
+            "migrate": 4295,
+            "regroup": 2231
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.6066792000201531,
+      "seed": 101,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dascmop",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 0.33825,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dascmop1_d30_i4",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 0.33825,
+        "igd_plus": 0.29870927564006283,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.33282902827500827,
+        "normalized_hv_auc": 0.1548022457516602,
+        "runtime_seconds": 0.627095100004226,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 12,
+          "behavior_counts": {
+            "graze": 5228,
+            "migrate": 3917,
+            "regroup": 2755
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.627095100004226,
+      "seed": 211,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dascmop",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 0.3471666666666667,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dascmop1_d30_i4",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 0.3471666666666667,
+        "igd_plus": 0.30269867429161423,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.3268515919141401,
+        "normalized_hv_auc": 0.18981356082498935,
+        "runtime_seconds": 0.6505851999972947,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 12,
+          "behavior_counts": {
+            "graze": 5190,
+            "migrate": 3870,
+            "regroup": 2840
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.6505851999972947,
+      "seed": 307,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dascmop",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 0.35891666666666666,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dascmop1_d30_i4",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 0.35891666666666666,
+        "igd_plus": 0.29284687244595825,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.3414309601427748,
+        "normalized_hv_auc": 0.15017470435410255,
+        "runtime_seconds": 0.6395920000504702,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 13,
+          "behavior_counts": {
+            "graze": 5302,
+            "migrate": 3897,
+            "regroup": 2701
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.6395920000504702,
+      "seed": 401,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dascmop",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 0.367,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dascmop1_d30_i4",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 0.367,
+        "igd_plus": 0.31427887620454376,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.31731627778208843,
+        "normalized_hv_auc": 0.1937710043306579,
+        "runtime_seconds": 0.6077002999954857,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 9,
+          "behavior_counts": {
+            "graze": 5180,
+            "migrate": 3841,
+            "regroup": 2879
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.6077002999954857,
+      "seed": 503,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dascmop",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 0.3305,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dascmop1_d30_i4",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 0.3305,
+        "igd_plus": 0.3009211146420111,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.3273389849921898,
+        "normalized_hv_auc": 0.16576945594000836,
+        "runtime_seconds": 0.6612448000232689,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 14,
+          "behavior_counts": {
+            "graze": 5098,
+            "migrate": 3665,
+            "regroup": 3137
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.6612448000232689,
+      "seed": 601,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dascmop",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 0.36433333333333334,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dascmop1_d30_i4",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 0.36433333333333334,
+        "igd_plus": 0.3113186949092216,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.3235415671022197,
+        "normalized_hv_auc": 0.14504557088525588,
+        "runtime_seconds": 0.6389509000000544,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 13,
+          "behavior_counts": {
+            "graze": 5334,
+            "migrate": 3994,
+            "regroup": 2572
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.6389509000000544,
+      "seed": 701,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dascmop",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 0.35941666666666666,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dascmop1_d30_i4",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 0.35941666666666666,
+        "igd_plus": 0.31717072326252593,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.31273310291583173,
+        "normalized_hv_auc": 0.15736830948703684,
+        "runtime_seconds": 0.6251084000105038,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 11,
+          "behavior_counts": {
+            "graze": 5146,
+            "migrate": 3815,
+            "regroup": 2939
+          },
+          "candidate": "C001-one-shot",
+          "cycles": 119,
+          "one_candidate_per_sheep_per_cycle": true,
+          "population_size": 100
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.6251084000105038,
+      "seed": 809,
+      "valid": true
+    }
+  ],
+  "candidate_id": "C001-one-shot",
+  "code_reference": "sha256:594cc68884ce544e939f348b4ac9ee35ff453cff8bee655124c72a14150f71e8:mosfmo/algorithm.py",
+  "completed_at": "2026-09-08T07:27:57.114954Z",
+  "contract_fingerprint": "3e605a2918f27fe21754b5a1a7a94e6e62b19bc7c592d70684d28f0fc4499135",
+  "decision_metadata": {
+    "decided_at": null,
+    "decision": null,
+    "reason": null,
+    "rule_results": []
+  },
+  "errors": [],
+  "experiment_id": "C001-one-shot-quick",
+  "extensions": {},
+  "parent_candidate_id": "baseline-mo-sfmo",
+  "resource_budget": {
+    "limit": 576000,
+    "primary_unit": "objective_vector_evaluations",
+    "used": 576000,
+    "wall_time_seconds": 41.727110399864614
+  },
+  "result_version": "1.0",
+  "run_configuration": {
+    "benchmark_instance_ids": [
+      "zdt1_d30",
+      "zdt3_d30",
+      "zdt4_d10",
+      "dtlz2_m3_d12",
+      "dtlz7_m3_d22",
+      "dascmop1_d30_i4"
+    ],
+    "budget_per_run": 12000,
+    "parameters": {
+      "algorithm": "ash_mosfmo",
+      "schema_stage_semantics": "This schema stage is the scientific intermediate screen: one initial-incumbent slot plus at most four candidates; apply accuracy or efficiency acceptance and every non-inferiority rule."
+    },
+    "seeds": [
+      101,
+      211,
+      307,
+      401,
+      503,
+      601,
+      701,
+      809
+    ]
+  },
+  "stage": "quick",
+  "started_at": "2026-09-08T07:27:12.534154Z",
+  "statistical_comparisons": [],
+  "status": "completed",
+  "valid": true
+}

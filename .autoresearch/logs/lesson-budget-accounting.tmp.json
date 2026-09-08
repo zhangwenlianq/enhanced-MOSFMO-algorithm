@@ -1,0 +1,11 @@
+{
+  "id": "lesson-budget-accounting-20260908",
+  "created_at": "2026-09-08T07:37:48.699404Z",
+  "contract_fingerprint": "3e605a2918f27fe21754b5a1a7a94e6e62b19bc7c592d70684d28f0fc4499135",
+  "candidate_id": "baseline-mo-sfmo",
+  "outcome": "budget-reconciled",
+  "learned_mechanism": "Objective calls inside test and determinism helpers consume the same scientific resource as named experiments even when their outputs are not used as acceptance evidence.",
+  "do_not_repeat": "Do not rerun objective-consuming unit or determinism tests after protocol lock; use integrity, AST, import, and cached validation evidence for static checks.",
+  "next_hypothesis": "Continue H002 with the reconciled total and reserve all further NFE for declared staged experiments.",
+  "revisit_condition": "Only run additional diagnostic objectives if a candidate cannot otherwise be validated, and charge them before execution to an explicit candidate-stage allowance."
+}

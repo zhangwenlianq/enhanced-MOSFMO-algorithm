@@ -1,0 +1,216 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openai.local/autoresearch/research-contract.schema.json",
+  "title": "AutoResearch Research Contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version", "contract_id", "confirmed_at", "project", "algorithm",
+    "problem", "research_objective", "scope", "benchmarks", "baselines",
+    "metrics", "statistical_protocol", "repeated_runs", "resource_budget",
+    "fairness_constraints", "decision_rules", "evaluation_stages",
+    "stopping_rules", "environment", "reproducibility", "assumptions",
+    "uncertainties", "risks"
+  ],
+  "properties": {
+    "contract_version": {"const": "1.0"},
+    "contract_id": {"type": "string", "minLength": 1},
+    "confirmed_at": {"type": "string", "format": "date-time"},
+    "project": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "name", "root_hint"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "name": {"type": "string", "minLength": 1},
+        "root_hint": {"type": "string"},
+        "repository": {"type": ["string", "null"]}
+      }
+    },
+    "algorithm": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "name", "classifications", "implementation_status"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "name": {"type": "string", "minLength": 1},
+        "classifications": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "implementation_status": {"type": "string", "minLength": 1},
+        "entry_points": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "problem": {
+      "type": "object", "additionalProperties": false,
+      "required": ["classifications", "description"],
+      "properties": {
+        "classifications": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "description": {"type": "string", "minLength": 1}
+      }
+    },
+    "research_objective": {"type": "string", "minLength": 1},
+    "scope": {
+      "type": "object", "additionalProperties": false,
+      "required": ["modifiable_paths", "protected_paths", "allowed_change_kinds", "forbidden_change_kinds"],
+      "properties": {
+        "modifiable_paths": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "protected_paths": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "allowed_change_kinds": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "forbidden_change_kinds": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+      }
+    },
+    "benchmarks": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "suite", "source", "instances"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "suite": {"type": "string", "minLength": 1},
+          "source": {"type": "string", "minLength": 1},
+          "instances": {
+            "type": "array", "minItems": 1,
+            "items": {
+              "type": "object", "additionalProperties": false,
+              "required": ["id", "role", "parameters"],
+              "properties": {
+                "id": {"type": "string", "minLength": 1},
+                "role": {"enum": ["development", "holdout", "robustness", "validation"]},
+                "parameters": {"type": "object"}
+              }
+            }
+          }
+        }
+      }
+    },
+    "baselines": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "name", "type", "command", "code_reference", "budget_equivalence"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "name": {"type": "string", "minLength": 1},
+          "type": {"enum": ["initial", "internal", "external", "reference"]},
+          "command": {"type": "string", "minLength": 1},
+          "code_reference": {"type": "string", "minLength": 1},
+          "budget_equivalence": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "metrics": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["name", "meaning", "direction", "role", "aggregation", "target", "tolerance", "acceptable_regression", "statistical_requirement"],
+        "properties": {
+          "name": {"type": "string", "minLength": 1},
+          "meaning": {"type": "string", "minLength": 1},
+          "direction": {"enum": ["maximize", "minimize", "target", "constraint"]},
+          "role": {"enum": ["primary", "secondary", "constraint", "diagnostic"]},
+          "aggregation": {"type": "string", "minLength": 1},
+          "target": {},
+          "tolerance": {"type": ["number", "null"]},
+          "acceptable_regression": {},
+          "statistical_requirement": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "statistical_protocol": {
+      "type": "object", "additionalProperties": false,
+      "required": ["methods", "pairing", "multiplicity", "uncertainty_reporting", "minimum_evidence"],
+      "properties": {
+        "methods": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "pairing": {"type": "string", "minLength": 1},
+        "multiplicity": {"type": "string", "minLength": 1},
+        "uncertainty_reporting": {"type": "string", "minLength": 1},
+        "minimum_evidence": {"type": "string", "minLength": 1},
+        "significance_level": {"type": ["number", "null"], "minimum": 0, "maximum": 1}
+      }
+    },
+    "repeated_runs": {
+      "type": "object", "additionalProperties": false,
+      "required": ["policy", "seeds", "seed_selection", "additional_run_policy"],
+      "properties": {
+        "policy": {"type": "string", "minLength": 1},
+        "seeds": {"type": "array", "minItems": 1, "items": {"type": "integer"}, "uniqueItems": true},
+        "seed_selection": {"type": "string", "minLength": 1},
+        "additional_run_policy": {"type": "string", "minLength": 1}
+      }
+    },
+    "resource_budget": {
+      "type": "object", "additionalProperties": false,
+      "required": ["primary_unit", "total", "fixed_allowance", "per_candidate_max", "wall_time_seconds", "failed_runs_count", "tuning_counts"],
+      "properties": {
+        "primary_unit": {"type": "string", "minLength": 1},
+        "total": {"type": "number", "minimum": 0},
+        "fixed_allowance": {"type": "number", "minimum": 0},
+        "per_candidate_max": {"type": "number", "minimum": 0},
+        "wall_time_seconds": {"type": ["number", "null"], "minimum": 0},
+        "failed_runs_count": {"type": "boolean"},
+        "tuning_counts": {"type": "boolean"},
+        "resource_limits": {"type": "object"}
+      }
+    },
+    "fairness_constraints": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "decision_rules": {
+      "type": "object", "additionalProperties": false,
+      "required": ["acceptance", "non_inferiority", "allowed_regressions", "inconclusive", "invalid"],
+      "properties": {
+        "acceptance": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "non_inferiority": {"type": "array", "items": {"type": "string"}},
+        "allowed_regressions": {"type": "array", "items": {"type": "string"}},
+        "inconclusive": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "invalid": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+      }
+    },
+    "evaluation_stages": {
+      "type": "array", "minItems": 2,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["name", "benchmark_instance_ids", "seeds", "budget_per_run", "candidate_limit", "promotion_rules"],
+        "properties": {
+          "name": {"enum": ["static", "smoke", "quick", "intermediate", "full", "robustness"]},
+          "benchmark_instance_ids": {"type": "array", "items": {"type": "string"}},
+          "seeds": {"type": "array", "items": {"type": "integer"}},
+          "budget_per_run": {"type": "number", "minimum": 0},
+          "candidate_limit": {"type": "integer", "minimum": 1},
+          "promotion_rules": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+        }
+      }
+    },
+    "stopping_rules": {
+      "type": "object", "additionalProperties": false,
+      "required": ["target_conditions", "maximum_candidates", "budget_exhaustion", "stagnation", "other_terminal_conditions"],
+      "properties": {
+        "target_conditions": {"type": "array", "items": {"type": "string"}},
+        "maximum_candidates": {"type": ["integer", "null"], "minimum": 1},
+        "budget_exhaustion": {"type": "string", "minLength": 1},
+        "stagnation": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "other_terminal_conditions": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "environment": {
+      "type": "object", "additionalProperties": false,
+      "required": ["build_commands", "runtime", "dependencies", "hardware", "environment_capture"],
+      "properties": {
+        "build_commands": {"type": "array", "items": {"type": "string"}},
+        "runtime": {"type": "string", "minLength": 1},
+        "dependencies": {"type": "array", "items": {"type": "string"}},
+        "hardware": {"type": "string", "minLength": 1},
+        "environment_capture": {"type": "string", "minLength": 1}
+      }
+    },
+    "reproducibility": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source_version", "randomness_controls", "artifact_retention", "reproduction_commands"],
+      "properties": {
+        "source_version": {"type": "string", "minLength": 1},
+        "randomness_controls": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "artifact_retention": {"type": "string", "minLength": 1},
+        "reproduction_commands": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "assumptions": {"type": "array", "items": {"type": "string"}},
+    "uncertainties": {"type": "array", "items": {"type": "string"}},
+    "risks": {"type": "array", "items": {"type": "string"}},
+    "extensions": {"type": "object"}
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "contract_version": "1.0",
+  "contract_id": "<replace-with-stable-contract-id>",
+  "confirmed_at": "<replace-with-UTC-date-time>",
+  "project": {"id": "<project-id>", "name": "<project-name>", "root_hint": ".", "repository": null},
+  "algorithm": {"id": "<algorithm-id>", "name": "<algorithm-name>", "classifications": ["<classification>"], "implementation_status": "<status>", "entry_points": []},
+  "problem": {"classifications": ["<problem-classification>"], "description": "<problem-description>"},
+  "research_objective": "<measurable-objective>",
+  "scope": {
+    "modifiable_paths": ["<relative-path-or-glob>"],
+    "protected_paths": ["<relative-path-or-glob>"],
+    "allowed_change_kinds": ["<allowed-change>"],
+    "forbidden_change_kinds": ["protocol weakening", "benchmark-specific cheating"]
+  },
+  "benchmarks": [{"id": "<benchmark-id>", "suite": "<suite>", "source": "<source-or-provenance>", "instances": [{"id": "<instance-id>", "role": "development", "parameters": {}}]}],
+  "baselines": [{"id": "initial", "name": "Initial implementation", "type": "initial", "command": "<baseline-command>", "code_reference": "<immutable-reference>", "budget_equivalence": "<equivalence-rule>"}],
+  "metrics": [{"name": "<metric>", "meaning": "<meaning>", "direction": "maximize", "role": "primary", "aggregation": "<aggregation>", "target": null, "tolerance": null, "acceptable_regression": null, "statistical_requirement": "<requirement>"}],
+  "statistical_protocol": {"methods": ["<justified-method>"], "pairing": "<pairing-policy>", "multiplicity": "<multiplicity-policy>", "uncertainty_reporting": "<uncertainty-policy>", "minimum_evidence": "<minimum-evidence>", "significance_level": null},
+  "repeated_runs": {"policy": "<run-policy>", "seeds": [0], "seed_selection": "fixed before observation", "additional_run_policy": "<contract-bounded-policy>"},
+  "resource_budget": {"primary_unit": "<unit>", "total": 2, "fixed_allowance": 0, "per_candidate_max": 2, "wall_time_seconds": null, "failed_runs_count": true, "tuning_counts": true, "resource_limits": {}},
+  "fairness_constraints": ["Equivalent information and resource access for comparable algorithms"],
+  "decision_rules": {"acceptance": ["<acceptance-rule>"], "non_inferiority": [], "allowed_regressions": [], "inconclusive": ["<inconclusive-policy>"], "invalid": ["schema, correctness, budget, fairness, or integrity failure"]},
+  "evaluation_stages": [
+    {"name": "smoke", "benchmark_instance_ids": ["<instance-id>"], "seeds": [0], "budget_per_run": 0, "candidate_limit": 1, "promotion_rules": ["correctness and schema validation pass"]},
+    {"name": "quick", "benchmark_instance_ids": ["<instance-id>"], "seeds": [0], "budget_per_run": 1, "candidate_limit": 1, "promotion_rules": ["<promotion-rule>"]},
+    {"name": "full", "benchmark_instance_ids": ["<instance-id>"], "seeds": [0], "budget_per_run": 1, "candidate_limit": 1, "promotion_rules": ["all decision rules can be evaluated"]}
+  ],
+  "stopping_rules": {"target_conditions": ["<target-condition>"], "maximum_candidates": 1, "budget_exhaustion": "stop when locked total budget is exhausted", "stagnation": ["<stagnation-rule>"], "other_terminal_conditions": ["unrecoverable block", "invalid protocol"]},
+  "environment": {"build_commands": [], "runtime": "<runtime>", "dependencies": [], "hardware": "<hardware-policy>", "environment_capture": "<capture-command-or-file>"},
+  "reproducibility": {"source_version": "<source-reference>", "randomness_controls": ["all declared random generators are seeded"], "artifact_retention": "retain all structured results and failures", "reproduction_commands": []},
+  "assumptions": [],
+  "uncertainties": [],
+  "risks": ["benchmark overfitting"],
+  "extensions": {}
+}

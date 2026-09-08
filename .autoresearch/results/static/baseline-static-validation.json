@@ -1,0 +1,39 @@
+{
+  "aggregates": {},
+  "benchmark_runs": [],
+  "candidate_id": "baseline-mo-sfmo",
+  "code_reference": "sha256:7ad39f96eb49abce6337a920ab85b04e0e8175538fb8939e9929f8f856ddb796:mosfmo/baseline.py",
+  "completed_at": "2026-09-08T07:12:10.804318Z",
+  "contract_fingerprint": "3e605a2918f27fe21754b5a1a7a94e6e62b19bc7c592d70684d28f0fc4499135",
+  "decision_metadata": {
+    "decided_at": null,
+    "decision": null,
+    "reason": null,
+    "rule_results": []
+  },
+  "errors": [],
+  "experiment_id": "baseline-static-validation",
+  "extensions": {},
+  "parent_candidate_id": null,
+  "resource_budget": {
+    "limit": 0,
+    "primary_unit": "objective_vector_evaluations",
+    "used": 0,
+    "wall_time_seconds": 0.0
+  },
+  "result_version": "1.0",
+  "run_configuration": {
+    "benchmark_instance_ids": [],
+    "budget_per_run": 0,
+    "parameters": {
+      "algorithm": "mo_sfmo",
+      "schema_stage_semantics": "Source inspection, import, unit tests, scope diff, and schema checks all pass without an objective call."
+    },
+    "seeds": []
+  },
+  "stage": "static",
+  "started_at": "2026-09-08T07:12:10.803496Z",
+  "statistical_comparisons": [],
+  "status": "completed",
+  "valid": true
+}

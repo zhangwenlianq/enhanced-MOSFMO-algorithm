@@ -1,0 +1,34 @@
+{
+  "candidate_id": "C002-rumination-buffer",
+  "candidate_version": "1.0",
+  "change_summary": "Add a five-cycle per-sheep rumination buffer and intermittent archive/social refresh to the one-shot behavior mechanism.",
+  "changed_paths": [
+    "mosfmo/algorithm.py"
+  ],
+  "code_reference": "sha256:647c546b401c8db843182c18a6aa5f97babf427bec7a5fa13f47176d623b7653:mosfmo/algorithm.py",
+  "contract_fingerprint": "3e605a2918f27fe21754b5a1a7a94e6e62b19bc7c592d70684d28f0fc4499135",
+  "created_at": "2026-09-08T07:35:27.257546Z",
+  "decision": {
+    "decided_at": "2026-09-08T07:45:00.000000Z",
+    "reason": "Intermediate accuracy improved strongly, but median runtime remained about 146 percent above baseline and violated the locked 10 percent runtime non-inferiority threshold.",
+    "state": "REJECT"
+  },
+  "extensions": {
+    "intermediate_feasible_rate_gain": 0.0327013888888888,
+    "intermediate_mean_hv_ratio": 2.55058174719104,
+    "intermediate_mean_igd_ratio": 0.286546870812224,
+    "intermediate_runtime_ratio": 2.46460522557744
+  },
+  "hypothesis_id": "H002-rumination-buffer",
+  "parent_candidate_id": "baseline-mo-sfmo",
+  "result_refs": [
+    "results/smoke/C002-rumination-buffer.json",
+    "results/quick/C002-rumination-buffer.json"
+  ],
+  "status": "rejected",
+  "verification": {
+    "protected_integrity": true,
+    "static_ast_parse": true,
+    "strict_nfe": true
+  }
+}

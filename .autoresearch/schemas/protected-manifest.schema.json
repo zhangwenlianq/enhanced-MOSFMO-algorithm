@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openai.local/autoresearch/protected-manifest.schema.json",
+  "title": "AutoResearch Protected Artifact Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["manifest_version", "contract_fingerprint", "created_at", "artifacts"],
+  "properties": {
+    "manifest_version": {"const": "1.0"},
+    "contract_fingerprint": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "created_at": {"type": "string", "format": "date-time"},
+    "artifacts": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["path", "sha256", "size"],
+        "properties": {
+          "path": {"type": "string", "minLength": 1},
+          "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "size": {"type": "integer", "minimum": 0}
+        }
+      }
+    }
+  }
+}

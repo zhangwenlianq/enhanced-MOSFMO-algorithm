@@ -1,0 +1,48 @@
+{
+  "hypothesis_version": "1.0",
+  "hypothesis_id": "H003-collective-scent-field",
+  "created_at": "2026-09-08T07:45:00.000000Z",
+  "contract_fingerprint": "3e605a2918f27fe21754b5a1a7a94e6e62b19bc7c592d70684d28f0fc4499135",
+  "parent_candidate_id": "baseline-mo-sfmo",
+  "observed_weakness": "C002 retained a 2.55-fold mean normalized-HV ratio and reduced mean IGD+ to 28.7 percent of baseline, but remained 2.46 times slower despite sparse archive refresh.",
+  "evidence_refs": [
+    ".autoresearch/results/quick/C002-rumination-buffer.json",
+    ".autoresearch/results/quick/baseline-mo-sfmo.json",
+    ".autoresearch/lessons.jsonl"
+  ],
+  "suspected_mechanism": "A flock reacts to a shared scent and visual field rather than independently recomputing the entire social landscape for every sheep. Computing archive crowding once per pause and applying selection to the flock as arrays should remove interpreter overhead without changing the behavioral trajectory class.",
+  "proposed_modification": "Retain C002 one-shot switching and five-cycle rumination, but vectorize constrained scalarized replacement for all sheep and sample all archive guides from one crowding-derived probability field per social pause.",
+  "expected_effects": [
+    "Reduce C002 runtime by at least 55 percent",
+    "Achieve runtime no more than 1.10 times baseline",
+    "Retain at least 90 percent of C002's normalized-HV gain"
+  ],
+  "possible_downsides": [
+    "Vectorized tie handling could alter trajectories if it does not exactly mirror scalar constrained selection",
+    "Shared scent probabilities may reduce guide diversity if archive edge weights dominate"
+  ],
+  "affected_components": [
+    "mosfmo/algorithm.py constrained replacement",
+    "archive guide sampling"
+  ],
+  "related_hypotheses": [
+    "H001-one-shot-behavior",
+    "H002-rumination-buffer"
+  ],
+  "novelty": "The mechanism models flock-wide perception as one shared scent field while serving as a controlled computational ablation of C002.",
+  "falsification_evidence": [
+    "Quick runtime exceeds 1.10 times baseline",
+    "Quick normalized-HV gain over baseline falls below 0.01",
+    "Any development-instance normalized-HV loss relative to baseline exceeds 0.02"
+  ],
+  "planned_stages": [
+    "static",
+    "smoke",
+    "quick"
+  ],
+  "status": "proposed",
+  "extensions": {
+    "social_interval_cycles": 5,
+    "controlled_parent": "C002-rumination-buffer"
+  }
+}

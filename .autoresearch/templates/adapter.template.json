@@ -1,0 +1,10 @@
+{
+  "adapter_version": "1.0",
+  "status": "draft",
+  "working_directory": ".",
+  "commands": {"build": null, "smoke": null, "baseline": null, "candidate": null, "analyze": null},
+  "placeholders": {"candidate_id": "stable candidate identifier", "stage": "evaluation stage", "output": "absolute structured-result path", "seed": "integer seed"},
+  "result_schema": ".autoresearch/schemas/result.schema.json",
+  "timeout_exit_codes": [],
+  "environment": {}
+}

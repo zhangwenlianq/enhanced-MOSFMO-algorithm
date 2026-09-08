@@ -1,0 +1,241 @@
+{
+  "analysis_version": "1.0",
+  "contract_fingerprint": "3e605a2918f27fe21754b5a1a7a94e6e62b19bc7c592d70684d28f0fc4499135",
+  "generated_at": "2026-09-08T07:50:49.710929Z",
+  "result_files": [
+    ".autoresearch\\results\\smoke\\baseline-mo-sfmo.json",
+    ".autoresearch\\results\\smoke\\C001-one-shot.json",
+    ".autoresearch\\results\\smoke\\C002-rumination-buffer.json",
+    ".autoresearch\\results\\smoke\\C003-collective-scent-field.json"
+  ],
+  "stage": "smoke",
+  "statistics": {
+    "igd_plus": {
+      "friedman": {
+        "blocks": 6,
+        "p_value": 0.03766621215964412,
+        "statistic": 8.444444444444454
+      }
+    },
+    "normalized_hv": {
+      "friedman": {
+        "blocks": 6,
+        "p_value": 0.3916251762710848,
+        "statistic": 3.0000000000000187
+      }
+    },
+    "runtime_seconds": {
+      "friedman": {
+        "blocks": 6,
+        "p_value": 0.0004398496528388289,
+        "statistic": 18.0
+      }
+    }
+  },
+  "summary": {
+    "C001-one-shot": {
+      "evaluation_count": {
+        "count": 18,
+        "finite_count": 18,
+        "median": 6000.0,
+        "q1": 6000.0,
+        "q3": 6000.0
+      },
+      "feasible_solution_rate": {
+        "count": 18,
+        "finite_count": 18,
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "igd_plus": {
+        "count": 18,
+        "finite_count": 18,
+        "median": 1.4880421051750745,
+        "q1": 0.5962514920212972,
+        "q3": 2.648714876773659
+      },
+      "nfe_to_95_hv": {
+        "count": 18,
+        "finite_count": 0,
+        "median": null,
+        "q1": null,
+        "q3": null
+      },
+      "normalized_hv": {
+        "count": 18,
+        "finite_count": 18,
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.004734189622891436
+      },
+      "runtime_seconds": {
+        "count": 18,
+        "finite_count": 18,
+        "median": 0.43206044999533333,
+        "q1": 0.4116675000113901,
+        "q3": 0.5136802999913925
+      },
+      "time_to_95_hv_seconds": {
+        "count": 18,
+        "finite_count": 0,
+        "median": null,
+        "q1": null,
+        "q3": null
+      }
+    },
+    "C002-rumination-buffer": {
+      "evaluation_count": {
+        "count": 18,
+        "finite_count": 18,
+        "median": 6000.0,
+        "q1": 6000.0,
+        "q3": 6000.0
+      },
+      "feasible_solution_rate": {
+        "count": 18,
+        "finite_count": 18,
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "igd_plus": {
+        "count": 18,
+        "finite_count": 18,
+        "median": 1.4993783345961822,
+        "q1": 0.6096048984747336,
+        "q3": 2.548070913015912
+      },
+      "nfe_to_95_hv": {
+        "count": 18,
+        "finite_count": 0,
+        "median": null,
+        "q1": null,
+        "q3": null
+      },
+      "normalized_hv": {
+        "count": 18,
+        "finite_count": 18,
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.0013085426204044737
+      },
+      "runtime_seconds": {
+        "count": 18,
+        "finite_count": 18,
+        "median": 0.2543133000144735,
+        "q1": 0.2355776500189677,
+        "q3": 0.2866286000207765
+      },
+      "time_to_95_hv_seconds": {
+        "count": 18,
+        "finite_count": 0,
+        "median": null,
+        "q1": null,
+        "q3": null
+      }
+    },
+    "C003-collective-scent-field": {
+      "evaluation_count": {
+        "count": 18,
+        "finite_count": 18,
+        "median": 6000.0,
+        "q1": 6000.0,
+        "q3": 6000.0
+      },
+      "feasible_solution_rate": {
+        "count": 18,
+        "finite_count": 18,
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "igd_plus": {
+        "count": 18,
+        "finite_count": 18,
+        "median": 1.4993783345961822,
+        "q1": 0.6096048984747336,
+        "q3": 2.548070913015912
+      },
+      "nfe_to_95_hv": {
+        "count": 18,
+        "finite_count": 0,
+        "median": null,
+        "q1": null,
+        "q3": null
+      },
+      "normalized_hv": {
+        "count": 18,
+        "finite_count": 18,
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.0013085426204044737
+      },
+      "runtime_seconds": {
+        "count": 18,
+        "finite_count": 18,
+        "median": 0.03965915003209375,
+        "q1": 0.03808892499364447,
+        "q3": 0.04098182496090885
+      },
+      "time_to_95_hv_seconds": {
+        "count": 18,
+        "finite_count": 0,
+        "median": null,
+        "q1": null,
+        "q3": null
+      }
+    },
+    "baseline-mo-sfmo": {
+      "evaluation_count": {
+        "count": 18,
+        "finite_count": 18,
+        "median": 6000.0,
+        "q1": 6000.0,
+        "q3": 6000.0
+      },
+      "feasible_solution_rate": {
+        "count": 18,
+        "finite_count": 18,
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "igd_plus": {
+        "count": 18,
+        "finite_count": 18,
+        "median": 1.6020638800719391,
+        "q1": 1.058640959058693,
+        "q3": 2.692815664683207
+      },
+      "nfe_to_95_hv": {
+        "count": 18,
+        "finite_count": 0,
+        "median": null,
+        "q1": null,
+        "q3": null
+      },
+      "normalized_hv": {
+        "count": 18,
+        "finite_count": 18,
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "runtime_seconds": {
+        "count": 18,
+        "finite_count": 18,
+        "median": 0.10890295001445338,
+        "q1": 0.09875042497878894,
+        "q3": 0.11393102498550434
+      },
+      "time_to_95_hv_seconds": {
+        "count": 18,
+        "finite_count": 0,
+        "median": null,
+        "q1": null,
+        "q3": null
+      }
+    }
+  }
+}

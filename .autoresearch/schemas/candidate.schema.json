@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openai.local/autoresearch/candidate.schema.json",
+  "title": "AutoResearch Candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["candidate_version", "candidate_id", "parent_candidate_id", "hypothesis_id", "created_at", "contract_fingerprint", "code_reference", "status", "changed_paths", "change_summary", "verification", "result_refs", "decision"],
+  "properties": {
+    "candidate_version": {"const": "1.0"},
+    "candidate_id": {"type": "string", "minLength": 1},
+    "parent_candidate_id": {"type": ["string", "null"]},
+    "hypothesis_id": {"type": "string", "minLength": 1},
+    "created_at": {"type": "string", "format": "date-time"},
+    "contract_fingerprint": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "code_reference": {"type": "string", "minLength": 1},
+    "status": {"enum": ["designed", "implemented", "verified", "evaluating", "accepted", "rejected", "inconclusive", "invalid"]},
+    "changed_paths": {"type": "array", "items": {"type": "string"}},
+    "change_summary": {"type": "string", "minLength": 1},
+    "verification": {"type": "object"},
+    "result_refs": {"type": "array", "items": {"type": "string"}},
+    "decision": {
+      "type": ["object", "null"],
+      "properties": {
+        "state": {"enum": ["ACCEPT", "REJECT", "INCONCLUSIVE", "INVALID"]},
+        "reason": {"type": "string", "minLength": 1},
+        "decided_at": {"type": "string", "format": "date-time"}
+      },
+      "required": ["state", "reason", "decided_at"],
+      "additionalProperties": false
+    },
+    "extensions": {"type": "object"}
+  }
+}

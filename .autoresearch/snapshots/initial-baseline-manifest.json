@@ -1,0 +1,53 @@
+{
+  "contract_fingerprint": "3e605a2918f27fe21754b5a1a7a94e6e62b19bc7c592d70684d28f0fc4499135",
+  "created_at": "2026-09-08T07:13:37.421571Z",
+  "files": [
+    {
+      "path": "sfmo.py",
+      "sha256": "c889ad4baa5909464137ae71f5c2cd733296abc0bd921fec06f2f89f80a44b91",
+      "size": 14020
+    },
+    {
+      "path": "mosfmo/baseline.py",
+      "sha256": "7ad39f96eb49abce6337a920ab85b04e0e8175538fb8939e9929f8f856ddb796",
+      "size": 133
+    },
+    {
+      "path": "research/benchmarks.py",
+      "sha256": "0ebbfba48b9c1af48eeca5d4ffb9d53116cd34ef29620d2b971174e0a1207684",
+      "size": 6871
+    },
+    {
+      "path": "research/metrics.py",
+      "sha256": "11798050e1ecd7ac954b710d86d248c2e09a7b7c9a51cdab645edfda5f661378",
+      "size": 8258
+    },
+    {
+      "path": "research/baselines.py",
+      "sha256": "e2d68774363bddb9e1ce673333960c5f045b7a839ee9343c1020508ea17f6f1c",
+      "size": 22434
+    },
+    {
+      "path": "research/runner.py",
+      "sha256": "03864b33def2166e53cb8cf1e77db6e6b8678f8ef8c86a8306c74b7648d003f8",
+      "size": 19764
+    },
+    {
+      "path": "research/statistics.py",
+      "sha256": "93447667b0618896e84b6693c6740866530e668b792fae7dee04c07dce99deff",
+      "size": 2953
+    },
+    {
+      "path": "requirements.lock.txt",
+      "sha256": "851d82fede1a554e79447ea56ae41e3b24e287a0d1e07fa7b782741f422b1a02",
+      "size": 59
+    },
+    {
+      "path": "research-contract.confirmed.json",
+      "sha256": "6accbce9fbc1ac3b8115f688ae7c6f2f1a7e1c3c66fff8681d60645a22ec9421",
+      "size": 28369
+    }
+  ],
+  "kind": "checksummed-initial-baseline",
+  "snapshot_version": "1.0"
+}

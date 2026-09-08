@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openai.local/autoresearch/hypothesis.schema.json",
+  "title": "AutoResearch Hypothesis",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["hypothesis_version", "hypothesis_id", "created_at", "contract_fingerprint", "parent_candidate_id", "observed_weakness", "evidence_refs", "suspected_mechanism", "proposed_modification", "expected_effects", "possible_downsides", "affected_components", "related_hypotheses", "novelty", "falsification_evidence", "planned_stages", "status"],
+  "properties": {
+    "hypothesis_version": {"const": "1.0"},
+    "hypothesis_id": {"type": "string", "minLength": 1},
+    "created_at": {"type": "string", "format": "date-time"},
+    "contract_fingerprint": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "parent_candidate_id": {"type": ["string", "null"]},
+    "observed_weakness": {"type": "string", "minLength": 1},
+    "evidence_refs": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "suspected_mechanism": {"type": "string", "minLength": 1},
+    "proposed_modification": {"type": "string", "minLength": 1},
+    "expected_effects": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "possible_downsides": {"type": "array", "items": {"type": "string"}},
+    "affected_components": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "related_hypotheses": {"type": "array", "items": {"type": "string"}},
+    "novelty": {"type": "string", "minLength": 1},
+    "falsification_evidence": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "planned_stages": {"type": "array", "minItems": 1, "items": {"enum": ["static", "smoke", "quick", "intermediate", "full", "robustness"]}},
+    "status": {"enum": ["proposed", "implemented", "evaluating", "accepted", "rejected", "inconclusive", "invalid"]},
+    "extensions": {"type": "object"}
+  }
+}

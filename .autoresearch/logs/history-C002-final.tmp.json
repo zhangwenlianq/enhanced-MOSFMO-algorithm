@@ -1,0 +1,25 @@
+{
+  "id": "history-C002-rumination-intermediate-reject",
+  "created_at": "2026-09-08T07:45:00.000000Z",
+  "contract_fingerprint": "3e605a2918f27fe21754b5a1a7a94e6e62b19bc7c592d70684d28f0fc4499135",
+  "candidate_id": "C002-rumination-buffer",
+  "hypothesis_id": "H002-rumination-buffer",
+  "schema_staged": "quick",
+  "scientific_stage": "intermediate",
+  "decision": "REJECT",
+  "reason": "Five-cycle social sharing retains the accuracy gain and is faster than C001, but fails runtime non-inferiority against the initial incumbent.",
+  "evidence": [
+    "results/quick/C002-rumination-buffer.json",
+    "results/quick/baseline-mo-sfmo.json",
+    "reports/analysis-quick.json"
+  ],
+  "rule_results": {
+    "accuracy_gain": true,
+    "constraint_gain": true,
+    "feasible_rate_gain": 0.0327013888888888,
+    "mean_hv_ratio": 2.55058174719104,
+    "mean_igd_plus_ratio": 0.286546870812224,
+    "runtime_non_inferiority": false,
+    "runtime_ratio": 2.46460522557744
+  }
+}

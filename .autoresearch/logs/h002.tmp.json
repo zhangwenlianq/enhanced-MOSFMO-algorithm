@@ -1,0 +1,20 @@
+{
+  "hypothesis_version": "1.0",
+  "hypothesis_id": "H002-rumination-buffer",
+  "created_at": "2026-09-08T07:32:40.955859Z",
+  "contract_fingerprint": "3e605a2918f27fe21754b5a1a7a94e6e62b19bc7c592d70684d28f0fc4499135",
+  "parent_candidate_id": "baseline-mo-sfmo",
+  "observed_weakness": "C001 reduced intermediate IGD+ to 28.4 percent of baseline and raised mean normalized HV by 0.102, but took 4.33 times the baseline runtime because it performed full population ranking, leader-density calculation, and archive sorting every 100 evaluations.",
+  "evidence_refs": [".autoresearch/results/quick/C001-one-shot.json", ".autoresearch/results/quick/baseline-mo-sfmo.json", ".autoresearch/lessons.jsonl"],
+  "suspected_mechanism": "Sheep do not communicate every grazing observation to the full flock immediately; retaining each sheep's best recent forage cue and sharing it only at intermittent social pauses should preserve useful one-shot discoveries while reducing O(A^2) archive and ranking work.",
+  "proposed_modification": "Reconstruct one-shot switching from the protected baseline but add a rumination buffer: each sheep retains its best trial for five cycles, the external archive and rank chain refresh only at that social interval or final budget, and cached leaders/order guide intervening cycles. This is evaluated against both baseline and the C001 ablation.",
+  "expected_effects": ["Reduce C001 runtime by at least 50 percent", "Retain at least 90 percent of C001's normalized-HV gain over baseline", "Satisfy the locked runtime non-inferiority threshold against baseline or achieve the locked efficiency acceptance route"],
+  "possible_downsides": ["Stale leaders can slow response to new sparse-front discoveries", "Per-sheep scalar buffering can discard mutually nondominated trials", "Five-cycle communication may reduce feasibility propagation on DAS-CMOP"],
+  "affected_components": ["mosfmo/algorithm.py archive refresh", "rank-chain caching", "social information buffer"],
+  "related_hypotheses": ["H001-one-shot-behavior"],
+  "novelty": "A biologically interpretable intermittent rumination/social-sharing schedule couples one-shot behavior to computationally sparse archive maintenance; C001 supplies the required one-shot-only ablation.",
+  "falsification_evidence": ["Quick runtime is not at least 50 percent lower than C001", "Quick normalized-HV gain over baseline falls below 0.01", "Any development-instance normalized-HV loss relative to baseline exceeds 0.02", "Intermediate runtime remains more than 10 percent slower than baseline without an accepted efficiency trade-off"],
+  "planned_stages": ["static", "smoke", "quick"],
+  "status": "proposed",
+  "extensions": {"social_interval_cycles": 5, "ablation_reference": "C001-one-shot", "controlled_parent": "baseline-mo-sfmo"}
+}

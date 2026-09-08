@@ -1,0 +1,25 @@
+{
+  "id": "history-C001-one-shot-smoke-quick",
+  "created_at": "2026-09-08T07:25:30.725632Z",
+  "contract_fingerprint": "3e605a2918f27fe21754b5a1a7a94e6e62b19bc7c592d70684d28f0fc4499135",
+  "candidate_id": "C001-one-shot",
+  "hypothesis_id": "H001-one-shot-behavior",
+  "schema_stage": "smoke",
+  "scientific_stage": "quick",
+  "decision": "INCONCLUSIVE",
+  "promotion": "quick",
+  "evidence": ["results/smoke/C001-one-shot.json", "results/smoke/baseline-mo-sfmo.json", "reports/analysis-smoke.json"],
+  "rule_results": {
+    "mean_normalized_hv_baseline": 0.043394086003988384,
+    "mean_normalized_hv_candidate": 0.0665691780529115,
+    "absolute_hv_gain": 0.023175092048923117,
+    "mean_hv_auc_gain": 0.010028115052323084,
+    "mean_igd_plus_ratio_candidate_over_baseline": 0.376447457147604,
+    "runtime_ratio_candidate_over_baseline": 4.063520398940727,
+    "feasible_rate_gain": 0.0324444444444445,
+    "maximum_instance_hv_loss": 0.0,
+    "quick_accuracy_promotion": true,
+    "quick_efficiency_promotion": false
+  },
+  "reason": "The accuracy route passes because mean normalized-HV gain exceeds 0.01 and no instance loses more than 0.02. Runtime is substantially worse, so C001 is promoted for intermediate evidence but not accepted."
+}

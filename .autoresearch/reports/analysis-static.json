@@ -1,0 +1,63 @@
+{
+  "analysis_version": "1.0",
+  "contract_fingerprint": "3e605a2918f27fe21754b5a1a7a94e6e62b19bc7c592d70684d28f0fc4499135",
+  "generated_at": "2026-09-08T07:13:38.450130Z",
+  "result_files": [
+    ".autoresearch\\results\\static\\baseline-static-validation.json"
+  ],
+  "stage": "static",
+  "statistics": {},
+  "summary": {
+    "baseline-mo-sfmo": {
+      "evaluation_count": {
+        "count": 0,
+        "finite_count": 0,
+        "median": null,
+        "q1": null,
+        "q3": null
+      },
+      "feasible_solution_rate": {
+        "count": 0,
+        "finite_count": 0,
+        "median": null,
+        "q1": null,
+        "q3": null
+      },
+      "igd_plus": {
+        "count": 0,
+        "finite_count": 0,
+        "median": null,
+        "q1": null,
+        "q3": null
+      },
+      "nfe_to_95_hv": {
+        "count": 0,
+        "finite_count": 0,
+        "median": null,
+        "q1": null,
+        "q3": null
+      },
+      "normalized_hv": {
+        "count": 0,
+        "finite_count": 0,
+        "median": null,
+        "q1": null,
+        "q3": null
+      },
+      "runtime_seconds": {
+        "count": 0,
+        "finite_count": 0,
+        "median": null,
+        "q1": null,
+        "q3": null
+      },
+      "time_to_95_hv_seconds": {
+        "count": 0,
+        "finite_count": 0,
+        "median": null,
+        "q1": null,
+        "q3": null
+      }
+    }
+  }
+}

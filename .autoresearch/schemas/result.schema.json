@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openai.local/autoresearch/result.schema.json",
+  "title": "AutoResearch Experiment Result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["result_version", "experiment_id", "candidate_id", "parent_candidate_id", "stage", "valid", "status", "contract_fingerprint", "code_reference", "started_at", "completed_at", "run_configuration", "resource_budget", "benchmark_runs", "aggregates", "statistical_comparisons", "errors", "decision_metadata"],
+  "properties": {
+    "result_version": {"const": "1.0"},
+    "experiment_id": {"type": "string", "minLength": 1},
+    "candidate_id": {"type": "string", "minLength": 1},
+    "parent_candidate_id": {"type": ["string", "null"]},
+    "stage": {"enum": ["static", "smoke", "quick", "intermediate", "full", "robustness"]},
+    "valid": {"type": "boolean"},
+    "status": {"enum": ["completed", "failed", "timeout", "invalid", "interrupted"]},
+    "contract_fingerprint": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "code_reference": {"type": "string", "minLength": 1},
+    "started_at": {"type": "string", "format": "date-time"},
+    "completed_at": {"type": ["string", "null"], "format": "date-time"},
+    "run_configuration": {
+      "type": "object", "additionalProperties": false,
+      "required": ["benchmark_instance_ids", "seeds", "budget_per_run", "parameters"],
+      "properties": {
+        "benchmark_instance_ids": {"type": "array", "items": {"type": "string"}},
+        "seeds": {"type": "array", "items": {"type": "integer"}},
+        "budget_per_run": {"type": "number", "minimum": 0},
+        "parameters": {"type": "object"}
+      }
+    },
+    "resource_budget": {
+      "type": "object", "additionalProperties": false,
+      "required": ["primary_unit", "limit", "used", "wall_time_seconds"],
+      "properties": {
+        "primary_unit": {"type": "string", "minLength": 1},
+        "limit": {"type": "number", "minimum": 0},
+        "used": {"type": "number", "minimum": 0},
+        "wall_time_seconds": {"type": ["number", "null"], "minimum": 0}
+      }
+    },
+    "benchmark_runs": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["benchmark_id", "instance_id", "seed", "valid", "metrics", "constraints", "runtime_seconds", "evaluation_count", "resource_usage", "error"],
+        "properties": {
+          "benchmark_id": {"type": "string", "minLength": 1},
+          "instance_id": {"type": "string", "minLength": 1},
+          "seed": {"type": "integer"},
+          "valid": {"type": "boolean"},
+          "metrics": {"type": "object", "additionalProperties": {"type": ["number", "null"]}},
+          "constraints": {"type": "object", "additionalProperties": {"type": ["number", "boolean", "null"]}},
+          "runtime_seconds": {"type": ["number", "null"], "minimum": 0},
+          "evaluation_count": {"type": ["integer", "null"], "minimum": 0},
+          "resource_usage": {
+            "type": "object", "additionalProperties": false,
+            "required": ["primary_used"],
+            "properties": {"primary_used": {"type": "number", "minimum": 0}, "details": {"type": "object"}}
+          },
+          "error": {"type": ["object", "null"]}
+        }
+      }
+    },
+    "aggregates": {"type": "object"},
+    "statistical_comparisons": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["metric", "baseline_id", "method", "estimate", "uncertainty", "adjusted_probability", "effect", "conclusion"],
+        "properties": {
+          "metric": {"type": "string"},
+          "baseline_id": {"type": "string"},
+          "method": {"type": "string"},
+          "estimate": {"type": ["number", "null"]},
+          "uncertainty": {},
+          "adjusted_probability": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+          "effect": {},
+          "conclusion": {"type": "string"}
+        }
+      }
+    },
+    "errors": {"type": "array", "items": {"type": "object"}},
+    "decision_metadata": {
+      "type": "object", "additionalProperties": false,
+      "required": ["decision", "rule_results", "reason", "decided_at"],
+      "properties": {
+        "decision": {"type": ["string", "null"], "enum": ["ACCEPT", "REJECT", "INCONCLUSIVE", "INVALID", null]},
+        "rule_results": {"type": "array", "items": {"type": "object"}},
+        "reason": {"type": ["string", "null"]},
+        "decided_at": {"type": ["string", "null"], "format": "date-time"}
+      }
+    },
+    "extensions": {"type": "object"}
+  }
+}

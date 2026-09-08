@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openai.local/autoresearch/adapter.schema.json",
+  "title": "AutoResearch Project Adapter",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["adapter_version", "status", "working_directory", "commands", "placeholders", "result_schema", "timeout_exit_codes", "environment"],
+  "properties": {
+    "adapter_version": {"const": "1.0"},
+    "status": {"enum": ["draft", "active"]},
+    "working_directory": {"type": "string"},
+    "commands": {
+      "type": "object", "additionalProperties": false,
+      "required": ["build", "smoke", "baseline", "candidate", "analyze"],
+      "properties": {
+        "build": {"type": ["string", "null"]},
+        "smoke": {"type": ["string", "null"]},
+        "baseline": {"type": ["string", "null"]},
+        "candidate": {"type": ["string", "null"]},
+        "analyze": {"type": ["string", "null"]}
+      }
+    },
+    "placeholders": {"type": "object", "additionalProperties": {"type": "string"}},
+    "result_schema": {"type": "string", "minLength": 1},
+    "timeout_exit_codes": {"type": "array", "items": {"type": "integer"}},
+    "environment": {"type": "object", "additionalProperties": {"type": "string"}}
+  }
+}

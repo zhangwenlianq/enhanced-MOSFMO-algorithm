@@ -1,0 +1,47 @@
+{
+  "active_experiment": {
+    "candidate_id": "C002-rumination-buffer",
+    "code_reference": "sha256:647c546b401c8db843182c18a6aa5f97babf427bec7a5fa13f47176d623b7653:mosfmo/algorithm.py",
+    "experiment_id": "C002-rumination-intermediate",
+    "hypothesis_id": "H002-rumination-buffer",
+    "planned_result": "results/quick/C002-rumination-buffer.json",
+    "stage": "quick"
+  },
+  "budget_used": {
+    "candidates_evaluated": 1,
+    "diagnostic_objective_vector_evaluations": 25672,
+    "fixed_allowance": 24000,
+    "objective_vector_evaluations": 1525672,
+    "quick_stage": 1152000,
+    "smoke_stage": 324000
+  },
+  "contract_fingerprint": "3e605a2918f27fe21754b5a1a7a94e6e62b19bc7c592d70684d28f0fc4499135",
+  "created_at": "2026-09-08T06:51:45.247508Z",
+  "incumbent": {
+    "candidate_id": "baseline-mo-sfmo",
+    "code_reference": "sha256:e2d68774363bddb9e1ce673333960c5f045b7a839ee9343c1020508ea17f6f1c:research/baselines.py",
+    "result_refs": [
+      "results/static/baseline-static-validation.json",
+      "results/smoke/baseline-mo-sfmo.json",
+      "results/quick/baseline-mo-sfmo.json"
+    ]
+  },
+  "initial_baseline": {
+    "candidate_id": "baseline-mo-sfmo",
+    "code_reference": "sha256:e2d68774363bddb9e1ce673333960c5f045b7a839ee9343c1020508ea17f6f1c:research/baselines.py",
+    "result_refs": [
+      "results/static/baseline-static-validation.json",
+      "results/smoke/baseline-mo-sfmo.json",
+      "results/quick/baseline-mo-sfmo.json"
+    ],
+    "validated": true
+  },
+  "last_completed_action": "C002 passed the scientific quick accuracy-promotion route and reduced C001 runtime by archive batching",
+  "next_action": "Run C002 scientific intermediate evidence on schema stage quick",
+  "phase": "AUTONOMOUS_RESEARCH",
+  "protected_manifest_fingerprint": "1d1b35893e1bf4f9cb71feada8d6bc6c99fb07c0b05fb37eb16f4c4005d6193a",
+  "state_revision": 7,
+  "state_version": "1.0",
+  "terminal": null,
+  "updated_at": "2026-09-08T07:42:30.000000Z"
+}

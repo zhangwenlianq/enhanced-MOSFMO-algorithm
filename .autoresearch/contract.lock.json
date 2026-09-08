@@ -1,0 +1,809 @@
+{
+  "algorithm": {
+    "classifications": [
+      "population-based stochastic optimizer",
+      "multi-objective swarm intelligence",
+      "continuous bound-constrained optimization",
+      "constrained multi-objective optimization"
+    ],
+    "entry_points": [
+      "sfmo.py",
+      "research/runner.py",
+      "mosfmo/algorithm.py"
+    ],
+    "id": "ash-mosfmo",
+    "implementation_status": "A compilable single-objective SFMO baseline exists; the multi-objective implementation, evaluator, and comparator implementations must be built.",
+    "name": "Adaptive Success-History Multi-Objective SFMO"
+  },
+  "assumptions": [
+    "The user seeks a reusable continuous multi-objective optimizer rather than a UAV-specific objective implementation, because the workspace provides only generic SFMO code.",
+    "Cheap analytic benchmark objectives make fixed NFE and single-thread wall time meaningful complementary efficiency measures.",
+    "Pymoo 0.6.2 installs and runs on the present CPython 3.13 environment."
+  ],
+  "baselines": [
+    {
+      "budget_equivalence": "Same normalized initialization, archive capacity 100, strict NFE, seeds, constraints, clipping, and hardware as every comparator.",
+      "code_reference": "mosfmo/baseline.py protected after BUILD",
+      "command": "python -m research.runner run --algorithm mo_sfmo --stage {stage} --output {output}",
+      "id": "mo_sfmo",
+      "name": "Faithful archive-based multi-objective SFMO",
+      "type": "initial"
+    },
+    {
+      "budget_equivalence": "Population 100; same initialization, strict NFE, seeds, constraints, clipping, and hardware.",
+      "code_reference": "pymoo==0.6.2 NSGA2 wrapped and protected in research/baselines.py",
+      "command": "python -m research.runner run --algorithm nsga2 --stage {stage} --output {output}",
+      "id": "nsga2",
+      "name": "NSGA-II",
+      "type": "external"
+    },
+    {
+      "budget_equivalence": "Same initialization, strict NFE, seeds, constraints, clipping, and hardware.",
+      "code_reference": "Protected implementation in research/baselines.py: Tchebycheff, N=100, T=20, delta=0.9, nr=2, DE/rand/1/bin F=0.5 CR=1.0",
+      "command": "python -m research.runner run --algorithm moead_de --stage {stage} --output {output}",
+      "id": "moead_de",
+      "name": "MOEA/D-DE",
+      "type": "external"
+    },
+    {
+      "budget_equivalence": "Same initialization, strict NFE, seeds, constraints, clipping, and hardware.",
+      "code_reference": "Protected implementation in research/baselines.py: N=100, archive=100, w=0.5 to 0.1, c1=c2=1.5, vmax=0.2 range",
+      "command": "python -m research.runner run --algorithm mopso --stage {stage} --output {output}",
+      "id": "mopso",
+      "name": "Archive-grid MOPSO",
+      "type": "external"
+    },
+    {
+      "budget_equivalence": "Same initialization, strict NFE, seeds, constraints, clipping, and hardware.",
+      "code_reference": "Protected implementation in research/baselines.py: N=100, archive=100, a=2 to 0, ten-grid diversity control",
+      "command": "python -m research.runner run --algorithm mogwo --stage {stage} --output {output}",
+      "id": "mogwo",
+      "name": "Original archive-grid MOGWO",
+      "type": "external"
+    },
+    {
+      "budget_equivalence": "Same initialization, strict NFE, seeds, constraints, clipping, and hardware.",
+      "code_reference": "Protected implementation in research/baselines.py: N=100, archive=100, map-compass first 70 percent, landmark last 30 percent, map decay R=0.2",
+      "command": "python -m research.runner run --algorithm mopio --stage {stage} --output {output}",
+      "id": "mopio",
+      "name": "Archive-grid multi-objective pigeon-inspired optimizer",
+      "type": "external"
+    }
+  ],
+  "benchmarks": [
+    {
+      "id": "zdt",
+      "instances": [
+        {
+          "id": "zdt1_d30",
+          "parameters": {
+            "bounds": "[0,1]^30",
+            "n_obj": 2,
+            "n_var": 30,
+            "pymoo_problem": "zdt1",
+            "reference_front": "analytic 10001-point uniform parameterization"
+          },
+          "role": "development"
+        },
+        {
+          "id": "zdt3_d30",
+          "parameters": {
+            "bounds": "[0,1]^30",
+            "n_obj": 2,
+            "n_var": 30,
+            "pymoo_problem": "zdt3",
+            "reference_front": "analytic 10001-point uniform parameterization followed by nondominated filtering"
+          },
+          "role": "development"
+        },
+        {
+          "id": "zdt4_d10",
+          "parameters": {
+            "bounds": "x1 in [0,1], x2..x10 in [-5,5]",
+            "n_obj": 2,
+            "n_var": 10,
+            "pymoo_problem": "zdt4",
+            "reference_front": "analytic 10001-point uniform parameterization"
+          },
+          "role": "development"
+        },
+        {
+          "id": "zdt2_d30",
+          "parameters": {
+            "bounds": "[0,1]^30",
+            "n_obj": 2,
+            "n_var": 30,
+            "pymoo_problem": "zdt2",
+            "reference_front": "analytic 10001-point uniform parameterization"
+          },
+          "role": "holdout"
+        },
+        {
+          "id": "zdt6_d10",
+          "parameters": {
+            "bounds": "[0,1]^10",
+            "n_obj": 2,
+            "n_var": 10,
+            "pymoo_problem": "zdt6",
+            "reference_front": "analytic 10001-point uniform parameterization"
+          },
+          "role": "holdout"
+        },
+        {
+          "id": "zdt1_d100",
+          "parameters": {
+            "bounds": "[0,1]^100",
+            "n_obj": 2,
+            "n_var": 100,
+            "pymoo_problem": "zdt1",
+            "reference_front": "analytic 10001-point uniform parameterization"
+          },
+          "role": "robustness"
+        },
+        {
+          "id": "zdt4_d50",
+          "parameters": {
+            "bounds": "x1 in [0,1], x2..x50 in [-5,5]",
+            "n_obj": 2,
+            "n_var": 50,
+            "pymoo_problem": "zdt4",
+            "reference_front": "analytic 10001-point uniform parameterization"
+          },
+          "role": "robustness"
+        }
+      ],
+      "source": "pymoo==0.6.2 official problem implementations; canonical ZDT continuous definitions",
+      "suite": "ZDT"
+    },
+    {
+      "id": "dtlz",
+      "instances": [
+        {
+          "id": "dtlz2_m3_d12",
+          "parameters": {
+            "bounds": "[0,1]^12",
+            "k": 10,
+            "n_obj": 3,
+            "n_var": 12,
+            "pymoo_problem": "dtlz2",
+            "reference_front": "Das-Dennis M=3 H=140, 10011 points"
+          },
+          "role": "development"
+        },
+        {
+          "id": "dtlz7_m3_d22",
+          "parameters": {
+            "bounds": "[0,1]^22",
+            "k": 20,
+            "n_obj": 3,
+            "n_var": 22,
+            "pymoo_problem": "dtlz7",
+            "reference_front": "pymoo 0.6.2 deterministic packaged front"
+          },
+          "role": "development"
+        },
+        {
+          "id": "dtlz1_m3_d7",
+          "parameters": {
+            "bounds": "[0,1]^7",
+            "k": 5,
+            "n_obj": 3,
+            "n_var": 7,
+            "pymoo_problem": "dtlz1",
+            "reference_front": "Das-Dennis M=3 H=140, 10011 points"
+          },
+          "role": "holdout"
+        },
+        {
+          "id": "dtlz3_m3_d12",
+          "parameters": {
+            "bounds": "[0,1]^12",
+            "k": 10,
+            "n_obj": 3,
+            "n_var": 12,
+            "pymoo_problem": "dtlz3",
+            "reference_front": "Das-Dennis M=3 H=140, 10011 points"
+          },
+          "role": "holdout"
+        },
+        {
+          "id": "dtlz2_m5_d14",
+          "parameters": {
+            "bounds": "[0,1]^14",
+            "k": 10,
+            "n_obj": 5,
+            "n_var": 14,
+            "pymoo_problem": "dtlz2",
+            "reference_front": "Das-Dennis M=5 H=15, 3876 points"
+          },
+          "role": "robustness"
+        }
+      ],
+      "source": "pymoo==0.6.2 official problem implementations; canonical DTLZ definitions",
+      "suite": "DTLZ"
+    },
+    {
+      "id": "dascmop",
+      "instances": [
+        {
+          "id": "dascmop1_d30_i4",
+          "parameters": {
+            "difficulty": [
+              0.25,
+              0.25,
+              0.25
+            ],
+            "difficulty_index": 4,
+            "n_obj": 2,
+            "n_var": 30,
+            "pymoo_problem": "dascmop1",
+            "reference_front": "pymoo 0.6.2 deterministic packaged front"
+          },
+          "role": "development"
+        },
+        {
+          "id": "dascmop4_d30_i8",
+          "parameters": {
+            "difficulty": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "difficulty_index": 8,
+            "n_obj": 2,
+            "n_var": 30,
+            "pymoo_problem": "dascmop4",
+            "reference_front": "pymoo 0.6.2 deterministic packaged front"
+          },
+          "role": "holdout"
+        },
+        {
+          "id": "dascmop7_d30_i12",
+          "parameters": {
+            "difficulty": [
+              0.75,
+              0.75,
+              0.75
+            ],
+            "difficulty_index": 12,
+            "n_obj": 3,
+            "n_var": 30,
+            "pymoo_problem": "dascmop7",
+            "reference_front": "pymoo 0.6.2 deterministic packaged front"
+          },
+          "role": "holdout"
+        },
+        {
+          "id": "dascmop7_d50_i16",
+          "parameters": {
+            "difficulty": [
+              0.5,
+              1.0,
+              0.5
+            ],
+            "difficulty_index": 16,
+            "n_obj": 3,
+            "n_var": 50,
+            "pymoo_problem": "dascmop7",
+            "reference_front": "pymoo 0.6.2 deterministic packaged front"
+          },
+          "role": "robustness"
+        }
+      ],
+      "source": "pymoo==0.6.2 official implementation derived from the original Java definitions; constraints use G(x)<=0",
+      "suite": "DAS-CMOP"
+    }
+  ],
+  "confirmed_at": "2026-09-08T06:43:51.658Z",
+  "contract_id": "sfmo-moo-efficiency-2026-09-08-v1",
+  "contract_version": "1.0",
+  "decision_rules": {
+    "acceptance": [
+      "Quick promotion requires either mean development normalized-HV/AUC gain >=1 percent with no instance final-HV loss >0.02, or runtime gain >=10 percent with mean final-HV loss <=0.005 and no instance loss >0.02.",
+      "Intermediate accuracy acceptance requires normalized-HV gain >=0.005 or IGD+ reduction >=5 percent and satisfaction of every non-inferiority rule.",
+      "Intermediate efficiency acceptance requires runtime or time-to-95-HV improvement >=10 percent, normalized-HV loss <=0.005, IGD+ regression <=5 percent, feasible-rate loss <=0.03, and no lower feasible-archive success.",
+      "Final target requires rank 1 or tolerance-tied rank 1 on normalized-HV or IGD+, rank 1 or tolerance-tied rank 1 on runtime, time-to-95-HV, or NFE-to-95-HV, and mean rank <=4 on every required metric among seven algorithms.",
+      "Final target additionally requires Holm-adjusted significant superiority over at least three of six baselines and non-inferiority to every remaining baseline on the relevant winning accuracy and efficiency metrics; holdout and robustness must not reverse the conclusion."
+    ],
+    "allowed_regressions": [
+      "Only regressions within the metric-specific non-inferiority tolerances are allowed; no constraint-success regression is allowed."
+    ],
+    "inconclusive": [
+      "Evidence inside uncertainty/tolerance bands or with conflicting required metrics is INCONCLUSIVE; run only the next contract-permitted stage, otherwise reject without promotion."
+    ],
+    "invalid": [
+      "Nonfinite objective or decision state, evaluator/schema error, unexplained NFE exceedance, persistent timeout/crash, protected-scope drift, fairness violation, benchmark special casing, or invalid-run fraction above 5 percent makes a candidate INVALID."
+    ],
+    "non_inferiority": [
+      "normalized-HV paired aggregate loss no greater than 0.005",
+      "IGD+ paired aggregate regression no greater than 5 percent, or absolute 0.0001 when comparator is zero",
+      "runtime, time-to-95-HV, and NFE-to-95-HV regression no greater than 10 percent without lower hit rate",
+      "feasible-solution-rate loss no greater than 0.03 and no lower feasible-archive success"
+    ]
+  },
+  "environment": {
+    "build_commands": [
+      "python -m pip install -r requirements.lock.txt",
+      "python -m unittest discover -s tests -v",
+      "python -m research.runner validate"
+    ],
+    "dependencies": [
+      "numpy==2.5.2",
+      "pymoo==0.6.2",
+      "scipy version resolved and frozen by installation for statistics",
+      "matplotlib==3.10.6 or installed environment version for final plots only"
+    ],
+    "environment_capture": ".autoresearch/reports/environment.json produced by python -m research.runner capture-environment",
+    "hardware": "11th Gen Intel Core i5-11400H, 16.8 GB RAM; no GPU; all authoritative timings on this host.",
+    "runtime": "CPython 3.13.15 on Windows 11; single process; PYTHONHASHSEED=0 and numerical thread counts fixed to 1."
+  },
+  "evaluation_stages": [
+    {
+      "benchmark_instance_ids": [],
+      "budget_per_run": 0,
+      "candidate_limit": 12,
+      "name": "static",
+      "promotion_rules": [
+        "Source inspection, import, unit tests, scope diff, and schema checks all pass without an objective call."
+      ],
+      "seeds": []
+    },
+    {
+      "benchmark_instance_ids": [
+        "zdt1_d30",
+        "zdt3_d30",
+        "zdt4_d10",
+        "dtlz2_m3_d12",
+        "dtlz7_m3_d22",
+        "dascmop1_d30_i4"
+      ],
+      "budget_per_run": 6000,
+      "candidate_limit": 13,
+      "name": "smoke",
+      "promotion_rules": [
+        "This schema stage is the scientific quick screen: one initial-incumbent slot plus at most twelve candidates; apply the locked quick promotion rule. The separate 24000-NFE deterministic baseline smoke validation is charged to fixed_allowance."
+      ],
+      "seeds": [
+        101,
+        211,
+        307
+      ]
+    },
+    {
+      "benchmark_instance_ids": [
+        "zdt1_d30",
+        "zdt3_d30",
+        "zdt4_d10",
+        "dtlz2_m3_d12",
+        "dtlz7_m3_d22",
+        "dascmop1_d30_i4"
+      ],
+      "budget_per_run": 12000,
+      "candidate_limit": 5,
+      "name": "quick",
+      "promotion_rules": [
+        "This schema stage is the scientific intermediate screen: one initial-incumbent slot plus at most four candidates; apply accuracy or efficiency acceptance and every non-inferiority rule."
+      ],
+      "seeds": [
+        101,
+        211,
+        307,
+        401,
+        503,
+        601,
+        701,
+        809
+      ]
+    },
+    {
+      "benchmark_instance_ids": [
+        "zdt1_d30",
+        "zdt3_d30",
+        "zdt4_d10",
+        "dtlz2_m3_d12",
+        "dtlz7_m3_d22",
+        "dascmop1_d30_i4"
+      ],
+      "budget_per_run": 20000,
+      "candidate_limit": 2,
+      "name": "intermediate",
+      "promotion_rules": [
+        "This schema stage is the scientific full-development gate: at most two frozen candidate finalists; select the incumbent before holdout is opened."
+      ],
+      "seeds": [
+        101,
+        211,
+        307,
+        401,
+        503,
+        601,
+        701,
+        809,
+        907,
+        1009,
+        1103,
+        1201,
+        1301,
+        1409,
+        1511,
+        1601,
+        1709,
+        1801,
+        1907,
+        2003
+      ]
+    },
+    {
+      "benchmark_instance_ids": [
+        "zdt1_d30",
+        "zdt3_d30",
+        "zdt4_d10",
+        "dtlz2_m3_d12",
+        "dtlz7_m3_d22",
+        "dascmop1_d30_i4",
+        "zdt2_d30",
+        "zdt6_d10",
+        "dtlz1_m3_d7",
+        "dtlz3_m3_d12",
+        "dascmop4_d30_i8",
+        "dascmop7_d30_i12"
+      ],
+      "budget_per_run": 20000,
+      "candidate_limit": 7,
+      "name": "full",
+      "promotion_rules": [
+        "Run the frozen ASH-MOSFMO and six frozen baselines; no algorithm modification after the first holdout execution; compute authoritative ranks and corrected tests."
+      ],
+      "seeds": [
+        101,
+        211,
+        307,
+        401,
+        503,
+        601,
+        701,
+        809,
+        907,
+        1009,
+        1103,
+        1201,
+        1301,
+        1409,
+        1511,
+        1601,
+        1709,
+        1801,
+        1907,
+        2003
+      ]
+    },
+    {
+      "benchmark_instance_ids": [
+        "zdt1_d100",
+        "zdt4_d50",
+        "dtlz2_m5_d14",
+        "dascmop7_d50_i16"
+      ],
+      "budget_per_run": 30000,
+      "candidate_limit": 7,
+      "name": "robustness",
+      "promotion_rules": [
+        "Run the same seven frozen algorithms and require that robustness does not reverse the final target conclusion."
+      ],
+      "seeds": [
+        2111,
+        2203,
+        2309,
+        2411,
+        2503,
+        2609,
+        2707,
+        2801,
+        2903,
+        3001
+      ]
+    }
+  ],
+  "extensions": {
+    "checkpoint_semantics": "A snapshot is taken after the first completed environmental-selection state at or beyond each 500-NFE boundary and labeled with actual NFE; final snapshot is always at the exact budget.",
+    "failure_semantics": "Persistent run failure records normalized_hv=0, igd_plus=null with statistical penalty 10*sqrt(M), feasible rates 0, runtime=120 seconds for ranking, and consumes its attempted evaluations.",
+    "nondominated_ties": "Exact duplicate objective vectors retain the earliest evaluation; crowding ties use stable evaluation order then decision-vector lexicographic order.",
+    "reference_normalization": "For each frozen reference set, ideal=min per objective and nadir=max per objective; zero range is a fatal evaluator defect. Hypervolume reference point is 1.1 in every normalized objective.",
+    "stage_semantic_aliases": {
+      "fixed_allowance": "twelve 2000-NFE deterministic baseline smoke executions",
+      "full": "authoritative development plus holdout comparison",
+      "intermediate": "scientific full-development gate",
+      "quick": "scientific intermediate screen",
+      "robustness": "unseen-seed and high-dimensional robustness comparison",
+      "smoke": "scientific quick screen",
+      "static": "zero-NFE static candidate verification"
+    }
+  },
+  "fairness_constraints": [
+    "Every comparable algorithm receives the same objective information, normalized-coordinate interface, initial sample for a paired instance-seed, strict NFE budget, archive capacity, checkpoint semantics, clipping, constraint convention, hardware, and thread limits.",
+    "All objective calls, including invalid candidates and initialization, consume NFE; no reference-front or known-optimum information is exposed to optimizers.",
+    "Population-based algorithms use nominal N=100; ASH-MOSFMO alone may reduce active N to the predeclared minimum 40 while retaining archive 100, because population reduction is the tested mechanism.",
+    "Boundary repair is coordinate-wise clipping in normalized [0,1]^D for all algorithms.",
+    "Constraint violation is sum(max(G_j,0)); Deb feasibility-first precedence applies before Pareto dominance or decomposition quality.",
+    "Runtime experiments use one process and one numerical thread; import, reference-front construction, metric post-processing, and serialization are excluded consistently.",
+    "Holdout instances are not executed before the final algorithm and its parameters are frozen.",
+    "Valid, failed, timed-out, and unfavorable runs are retained and reported."
+  ],
+  "metrics": [
+    {
+      "acceptable_regression": 0.005,
+      "aggregation": "Per instance median and IQR over seeds; cross-instance mean rank with ties within 0.005.",
+      "direction": "maximize",
+      "meaning": "Exact dominated hypervolume of the feasible nondominated archive after objective normalization, reference point 1.1 in every objective, divided by the frozen reference-front hypervolume and clipped to [0,1]. Empty feasible archive is zero.",
+      "name": "normalized_hv",
+      "role": "primary",
+      "statistical_requirement": "Final Friedman omnibus and Holm-adjusted paired Wilcoxon comparisons on per-instance medians.",
+      "target": 0.95,
+      "tolerance": 0.005
+    },
+    {
+      "acceptable_regression": "5 percent relative; when comparator median is zero use absolute 0.0001",
+      "aggregation": "Per instance median and IQR over seeds; cross-instance mean rank with relative ties within 5 percent.",
+      "direction": "minimize",
+      "meaning": "IGD+ from the frozen normalized reference front to the feasible nondominated archive; empty archive is +infinity, mapped to 10*sqrt(M) only for finite statistical computation.",
+      "name": "igd_plus",
+      "role": "primary",
+      "statistical_requirement": "Final Friedman omnibus and Holm-adjusted paired Wilcoxon comparisons on per-instance medians.",
+      "target": null,
+      "tolerance": 0.05
+    },
+    {
+      "acceptable_regression": "10 percent relative",
+      "aggregation": "Per instance median and IQR; cross-instance mean rank with relative ties within 10 percent.",
+      "direction": "minimize",
+      "meaning": "perf_counter wall time for search, including algorithm bookkeeping, archive and sorting, excluding import, reference construction, post-hoc metrics, and serialization.",
+      "name": "runtime_seconds",
+      "role": "primary",
+      "statistical_requirement": "Paired fixed-order seeds, fixed single-thread environment, randomized algorithm run order, Friedman plus Holm-Wilcoxon at final.",
+      "target": null,
+      "tolerance": 0.1
+    },
+    {
+      "acceptable_regression": "10 percent relative provided hit rate is not lower",
+      "aggregation": "Lexicographic per instance: hit rate descending then median hit time ascending; cross-instance mean rank.",
+      "direction": "minimize",
+      "meaning": "Search time at the first completed environmental-selection checkpoint with normalized HV >=0.95; a miss is right-censored at final runtime and ranked after every hit.",
+      "name": "time_to_95_hv_seconds",
+      "role": "primary",
+      "statistical_requirement": "Report censoring and hit rate; Holm-Wilcoxon uses paired finite hits only and cannot override a worse hit rate.",
+      "target": 0.95,
+      "tolerance": 0.1
+    },
+    {
+      "acceptable_regression": "10 percent relative provided hit rate is not lower",
+      "aggregation": "Lexicographic per instance: hit rate descending then median hit NFE ascending; cross-instance mean rank.",
+      "direction": "minimize",
+      "meaning": "Actual NFE at the first completed environmental-selection checkpoint with normalized HV >=0.95; a miss is right-censored at the run budget.",
+      "name": "nfe_to_95_hv",
+      "role": "secondary",
+      "statistical_requirement": "Report censoring and paired seed outcomes.",
+      "target": 0.95,
+      "tolerance": 0.1
+    },
+    {
+      "acceptable_regression": 0,
+      "aggregation": "Median actual NFE and budget compliance rate.",
+      "direction": "minimize",
+      "meaning": "Number of objective-vector evaluations, including failed candidate evaluations; ordinary completed full runs must equal the locked budget exactly.",
+      "name": "evaluation_count",
+      "role": "secondary",
+      "statistical_requirement": "Any unexplained budget exceedance invalidates the run.",
+      "target": 20000,
+      "tolerance": 0
+    },
+    {
+      "acceptable_regression": 0.03,
+      "aggregation": "Per constrained instance median and IQR; cross-constrained-instance mean rank with ties within 0.03.",
+      "direction": "maximize",
+      "meaning": "Fraction of all evaluated points satisfying every G_j<=0; unconstrained problems report 1.0.",
+      "name": "feasible_solution_rate",
+      "role": "constraint",
+      "statistical_requirement": "Report constrained instances separately and use final paired comparisons.",
+      "target": null,
+      "tolerance": 0.03
+    },
+    {
+      "acceptable_regression": 0,
+      "aggregation": "Success proportion by constrained instance.",
+      "direction": "maximize",
+      "meaning": "Whether the final archive contains at least one feasible solution.",
+      "name": "feasible_archive_success",
+      "role": "constraint",
+      "statistical_requirement": "A lower success proportion defeats non-inferiority regardless of feasible_solution_rate.",
+      "target": 1.0,
+      "tolerance": 0
+    },
+    {
+      "acceptable_regression": 0.01,
+      "aggregation": "Per development instance median over seeds then mean rank.",
+      "direction": "maximize",
+      "meaning": "Trapezoidal area under the normalized-HV versus NFE curve at completed environmental-selection checkpoints, divided by the run budget.",
+      "name": "normalized_hv_auc",
+      "role": "diagnostic",
+      "statistical_requirement": "Used for quick-stage screening only, never as a replacement for final metrics.",
+      "target": null,
+      "tolerance": 0.01
+    }
+  ],
+  "problem": {
+    "classifications": [
+      "continuous multi-objective minimization",
+      "box constrained",
+      "inequality constrained"
+    ],
+    "description": "Two-to-five objective continuous minimization with finite box bounds and optional inequalities G(x)<=0; all algorithms operate internally in normalized [0,1]^D coordinates."
+  },
+  "project": {
+    "id": "sfmo-moo-code-re",
+    "name": "High-efficiency multi-objective Sheep Flock Migrate Optimization",
+    "repository": null,
+    "root_hint": "."
+  },
+  "repeated_runs": {
+    "additional_run_policy": "No discretionary additional seeds. One diagnostic retry of a transient failure may replace, but never add to, the stage allocation and its evaluations count against that allocation.",
+    "policy": "Nested fixed seeds: quick first 3, intermediate first 8, full first 20; robustness uses 10 disjoint unseen seeds.",
+    "seed_selection": "Fixed before observing any multi-objective result; holdout problems are unavailable to candidate decisions.",
+    "seeds": [
+      101,
+      211,
+      307,
+      401,
+      503,
+      601,
+      701,
+      809,
+      907,
+      1009,
+      1103,
+      1201,
+      1301,
+      1409,
+      1511,
+      1601,
+      1709,
+      1801,
+      1907,
+      2003,
+      2111,
+      2203,
+      2309,
+      2411,
+      2503,
+      2609,
+      2707,
+      2801,
+      2903,
+      3001
+    ]
+  },
+  "reproducibility": {
+    "artifact_retention": "Retain every valid, failed, timed-out, interrupted, and unfavorable structured result, log, hypothesis, candidate manifest, checksum, snapshot, and report under .autoresearch.",
+    "randomness_controls": [
+      "numpy Generator seeded by the declared run seed",
+      "paired initialization generated once from the instance-seed and passed identically to each algorithm",
+      "analysis/bootstrap RNG seed 424242",
+      "PYTHONHASHSEED=0",
+      "OMP_NUM_THREADS=1",
+      "OPENBLAS_NUM_THREADS=1",
+      "MKL_NUM_THREADS=1"
+    ],
+    "reproduction_commands": [
+      "python .autoresearch/tools/research_tool.py check-integrity --project-root .",
+      "python -m unittest discover -s tests -v",
+      "python -m research.runner reproduce --result {result}",
+      "python -m research.runner analyze --stage full"
+    ],
+    "source_version": "Original sfmo.py SHA-256 and every protected/candidate implementation SHA-256; no pre-existing Git repository."
+  },
+  "research_objective": "Construct and validate an efficient, high-performing multi-objective SFMO that ranks first or tied-first on at least one accuracy metric and one efficiency metric, while ranking fourth or better among seven algorithms on every required metric.",
+  "resource_budget": {
+    "failed_runs_count": true,
+    "fixed_allowance": 24000,
+    "per_candidate_max": 9084000,
+    "primary_unit": "objective_vector_evaluations",
+    "resource_limits": {
+      "archive_capacity": 100,
+      "budget_formula": "24000 fixed baseline-validation allowance + (6*3*6000*13) + (6*8*12000*5) + (6*20*20000*2) + (12*20*20000*7) + (4*10*30000*7) = 51108000",
+      "checkpoint_interval_nfe": 500,
+      "initial_population": 100,
+      "maximum_invalid_run_fraction_per_candidate_stage": 0.05,
+      "minimum_reduced_population": 40,
+      "per_candidate_max_formula": "6*3*6000 + 6*8*12000 + 6*20*20000 + 12*20*20000 + 4*10*30000 = 9084000",
+      "single_run_timeout_seconds": 120
+    },
+    "total": 51108000,
+    "tuning_counts": true,
+    "wall_time_seconds": 86400
+  },
+  "risks": [
+    "development-suite overfitting",
+    "archive and nondominated-sorting overhead dominating cheap objective runtime",
+    "unfair comparator weakening from implementation errors",
+    "reference-front discretization error",
+    "constraint difficulty causing empty feasible archives",
+    "one-shot behavior reducing exploitation depth",
+    "population reduction harming disconnected-front diversity",
+    "success-history feedback collapsing to a narrow behavior mode"
+  ],
+  "scope": {
+    "allowed_change_kinds": [
+      "one-shot per-individual behavioral switching",
+      "success-history parameter adaptation",
+      "linear or state-aware active population reduction from 100 to no fewer than 40",
+      "external archive and diversity-preserving leader selection",
+      "sheep flock fission-fusion, grazing, migration, regrouping, and alarm-inspired operators",
+      "rank-biased mentorship and unsuccessful-experience archive inspired by RDE mechanisms",
+      "implementation optimization that preserves evaluator semantics"
+    ],
+    "forbidden_change_kinds": [
+      "editing the locked contract or protected benchmark semantics",
+      "benchmark, instance, seed, known optimum, or reference-front special casing",
+      "changing metrics, seeds, budgets, tolerances, baselines, or acceptance rules",
+      "candidate-only extra evaluations or hidden objective calls",
+      "discarding failed or unfavorable runs",
+      "post-holdout algorithm modification",
+      "protocol weakening or selective reporting"
+    ],
+    "modifiable_paths": [
+      "mosfmo/algorithm.py",
+      "mosfmo/candidates/**",
+      "mosfmo/__init__.py",
+      ".autoresearch/candidates/**",
+      ".autoresearch/results/**",
+      ".autoresearch/logs/**",
+      ".autoresearch/reports/**",
+      ".autoresearch/snapshots/**"
+    ],
+    "protected_paths": [
+      "sfmo.py",
+      "research-contract.confirmed.json",
+      "requirements.lock.txt",
+      "research/benchmarks.py",
+      "research/metrics.py",
+      "research/baselines.py",
+      "research/runner.py",
+      "research/statistics.py",
+      "mosfmo/baseline.py",
+      "tests/**"
+    ]
+  },
+  "statistical_protocol": {
+    "methods": [
+      "Friedman rank test across problem-instance median blocks",
+      "paired two-sided Wilcoxon signed-rank post-hoc tests",
+      "paired hierarchical bootstrap over problem then seed for 95 percent effect intervals",
+      "median, IQR, mean rank, and win-tie-loss reporting"
+    ],
+    "minimum_evidence": "Quick uses 3 seeds on 6 development instances; intermediate uses 8; authoritative full uses 20 seeds on all 12 development/holdout instances; robustness uses 10 unseen seeds.",
+    "multiplicity": "Holm family-wise correction at alpha 0.05 across ASH-MOSFMO versus six baselines for each final primary metric; no uncorrected claim is authoritative.",
+    "pairing": "The same fixed seed is paired across algorithms for an instance; final hypothesis-test blocks are the twelve independent instance medians.",
+    "significance_level": 0.05,
+    "uncertainty_reporting": "Median and IQR per instance plus deterministic 10000-resample hierarchical bootstrap 95 percent intervals using analysis RNG seed 424242."
+  },
+  "stopping_rules": {
+    "budget_exhaustion": "Stop when 51108000 objective-vector evaluations or 86400 seconds of active experiment wall time is exhausted; do not borrow between stages beyond their candidate slots.",
+    "maximum_candidates": 12,
+    "other_terminal_conditions": [
+      "user-authorized cancellation",
+      "unrecoverable external dependency or environment block",
+      "invalid protocol",
+      "persistent invalid-run rate above the locked threshold"
+    ],
+    "stagnation": [
+      "Stop candidate generation after four consecutive valid candidates fail to replace the incumbent."
+    ],
+    "target_conditions": [
+      "All final acceptance conditions, statistical requirements, rank requirements, holdout checks, and robustness checks pass."
+    ]
+  },
+  "uncertainties": [
+    "There is no unique published multi-objective SFMO reference, so the initial MO-SFMO is a frozen minimal archive-based extension documented in code.",
+    "MOPIO variants differ in the literature; the exact protected archive-grid adaptation and parameters declared here define the comparator.",
+    "Absolute timing variance on a shared Windows workstation may be higher than objective-evaluation variance."
+  ]
+}

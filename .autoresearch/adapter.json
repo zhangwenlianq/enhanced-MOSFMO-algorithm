@@ -1,0 +1,22 @@
+{
+  "adapter_version": "1.0",
+  "status": "active",
+  "working_directory": ".",
+  "commands": {
+    "build": "python -B -m unittest discover -s tests -v",
+    "smoke": "python -B -m research.runner validate",
+    "baseline": "python -B -m research.runner run --algorithm {algorithm} --stage {stage} --output {output}",
+    "candidate": "python -B -m research.runner run --algorithm ash_mosfmo --candidate-id {candidate_id} --parent-candidate-id {parent_candidate_id} --stage {stage} --output {output}",
+    "analyze": "python -B -m research.runner analyze --stage {stage}"
+  },
+  "placeholders": {"candidate_id": "stable candidate identifier", "stage": "evaluation stage", "output": "absolute structured-result path", "seed": "integer seed"},
+  "result_schema": ".autoresearch/schemas/result.schema.json",
+  "timeout_exit_codes": [124, 1460],
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONHASHSEED": "0",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  }
+}

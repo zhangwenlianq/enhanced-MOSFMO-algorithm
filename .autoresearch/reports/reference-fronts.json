@@ -1,0 +1,261 @@
+{
+  "instances": {
+    "dascmop1_d30_i4": {
+      "f_shape": [
+        4,
+        2
+      ],
+      "g_shape": [
+        4,
+        11
+      ],
+      "reference_hv": 0.529684566859311,
+      "reference_sha256": "0fef05ebcf0768fc8ded07ec7a5daeb0944f5eb423e554a838526b4c99dc58ad",
+      "reference_shape": [
+        592,
+        2
+      ]
+    },
+    "dascmop4_d30_i8": {
+      "f_shape": [
+        4,
+        2
+      ],
+      "g_shape": [
+        4,
+        11
+      ],
+      "reference_hv": 0.4584672257267101,
+      "reference_sha256": "f30eff1392225d37e08dda1f30bc39d759f065cbe6b547dc29bccfcee25572c6",
+      "reference_shape": [
+        262,
+        2
+      ]
+    },
+    "dascmop7_d30_i12": {
+      "f_shape": [
+        4,
+        3
+      ],
+      "g_shape": [
+        4,
+        7
+      ],
+      "reference_hv": 1.1101128943519636,
+      "reference_sha256": "c90d39db0bc540add906094245a59c2fcec5f42c62b72b16941402f057d69a50",
+      "reference_shape": [
+        1260,
+        3
+      ]
+    },
+    "dascmop7_d50_i16": {
+      "f_shape": [
+        4,
+        3
+      ],
+      "g_shape": [
+        4,
+        7
+      ],
+      "reference_hv": 1.1476670924019843,
+      "reference_sha256": "c0576a0e52ca0f945f47e7ed923bb33615852d1a223d4c959c40bde168941a32",
+      "reference_shape": [
+        2704,
+        3
+      ]
+    },
+    "dtlz1_m3_d7": {
+      "f_shape": [
+        4,
+        3
+      ],
+      "g_shape": [
+        4,
+        0
+      ],
+      "reference_hv": 1.160744897959157,
+      "reference_sha256": "318a8b225259662e7eb759b42550010189aca2c2ea3396aaf97b2269b4ae9016",
+      "reference_shape": [
+        10011,
+        3
+      ]
+    },
+    "dtlz2_m3_d12": {
+      "f_shape": [
+        4,
+        3
+      ],
+      "g_shape": [
+        4,
+        0
+      ],
+      "reference_hv": 0.8017841411723511,
+      "reference_sha256": "d3f350e55a0d21128af88e836a9529470c1f9a06a21baea4865c5b11ec503835",
+      "reference_shape": [
+        10011,
+        3
+      ]
+    },
+    "dtlz2_m5_d14": {
+      "f_shape": [
+        4,
+        5
+      ],
+      "g_shape": [
+        4,
+        0
+      ],
+      "reference_hv": 1.3928709307886922,
+      "reference_sha256": "3efd789aa8b3c6c8fc31fee643ee0c25da0c324f9d55ea2105d3834e6bb0591e",
+      "reference_shape": [
+        3876,
+        5
+      ]
+    },
+    "dtlz3_m3_d12": {
+      "f_shape": [
+        4,
+        3
+      ],
+      "g_shape": [
+        4,
+        0
+      ],
+      "reference_hv": 0.8017841411723511,
+      "reference_sha256": "d3f350e55a0d21128af88e836a9529470c1f9a06a21baea4865c5b11ec503835",
+      "reference_shape": [
+        10011,
+        3
+      ]
+    },
+    "dtlz7_m3_d22": {
+      "f_shape": [
+        4,
+        3
+      ],
+      "g_shape": [
+        4,
+        0
+      ],
+      "reference_hv": 0.5993683663791476,
+      "reference_sha256": "a117d0475d4da4b9484ef6ad39ee9c8b7198d88505cd70aae60c660f6d4aa306",
+      "reference_shape": [
+        9409,
+        3
+      ]
+    },
+    "zdt1_d100": {
+      "f_shape": [
+        4,
+        2
+      ],
+      "g_shape": [
+        4,
+        0
+      ],
+      "reference_hv": 0.8766164591971116,
+      "reference_sha256": "20176920e7c9369e0afa90b6afed0bf881d0419e0f5ee04bbd202c00ed3fee7a",
+      "reference_shape": [
+        10001,
+        2
+      ]
+    },
+    "zdt1_d30": {
+      "f_shape": [
+        4,
+        2
+      ],
+      "g_shape": [
+        4,
+        0
+      ],
+      "reference_hv": 0.8766164591971116,
+      "reference_sha256": "20176920e7c9369e0afa90b6afed0bf881d0419e0f5ee04bbd202c00ed3fee7a",
+      "reference_shape": [
+        10001,
+        2
+      ]
+    },
+    "zdt2_d30": {
+      "f_shape": [
+        4,
+        2
+      ],
+      "g_shape": [
+        4,
+        0
+      ],
+      "reference_hv": 0.5432833350000011,
+      "reference_sha256": "1988fba3ec0b18597f1463e06156046ccbf221f68a071f99bac17593b039d690",
+      "reference_shape": [
+        10001,
+        2
+      ]
+    },
+    "zdt3_d30": {
+      "f_shape": [
+        4,
+        2
+      ],
+      "g_shape": [
+        4,
+        0
+      ],
+      "reference_hv": 0.7273751452224937,
+      "reference_sha256": "19fab1621e556c5a3fe3ca38e8c04b1e5bdc54b587bf2116435ac395af39689b",
+      "reference_shape": [
+        2660,
+        2
+      ]
+    },
+    "zdt4_d10": {
+      "f_shape": [
+        4,
+        2
+      ],
+      "g_shape": [
+        4,
+        0
+      ],
+      "reference_hv": 0.8766164591971116,
+      "reference_sha256": "20176920e7c9369e0afa90b6afed0bf881d0419e0f5ee04bbd202c00ed3fee7a",
+      "reference_shape": [
+        10001,
+        2
+      ]
+    },
+    "zdt4_d50": {
+      "f_shape": [
+        4,
+        2
+      ],
+      "g_shape": [
+        4,
+        0
+      ],
+      "reference_hv": 0.8766164591971116,
+      "reference_sha256": "20176920e7c9369e0afa90b6afed0bf881d0419e0f5ee04bbd202c00ed3fee7a",
+      "reference_shape": [
+        10001,
+        2
+      ]
+    },
+    "zdt6_d10": {
+      "f_shape": [
+        4,
+        2
+      ],
+      "g_shape": [
+        4,
+        0
+      ],
+      "reference_hv": 0.6163576445230666,
+      "reference_sha256": "bc7742c24cdeded86e32bb32445831241f12d7e0446c143ddc5d6abf95aa8d23",
+      "reference_shape": [
+        10001,
+        2
+      ]
+    }
+  },
+  "validated_at": "2026-09-08T07:10:41.894496Z"
+}

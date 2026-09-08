@@ -1,0 +1,20 @@
+{
+  "hypothesis_version": "1.0",
+  "hypothesis_id": "H001-one-shot-behavior",
+  "created_at": "2026-09-08T07:20:55.202049Z",
+  "contract_fingerprint": "3e605a2918f27fe21754b5a1a7a94e6e62b19bc7c592d70684d28f0fc4499135",
+  "parent_candidate_id": "baseline-mo-sfmo",
+  "observed_weakness": "The scalar SFMO smoke used 648 NFE for only 48 nominal grazing trials, and the protected MO-SFMO repeats up to 20 grazing batches plus migration batches before switching state; its 2000-NFE diagnostic ZDT1 normalized HV was zero.",
+  "evidence_refs": ["sfmo.py", ".autoresearch/results/smoke/baseline-determinism.json", ".autoresearch/reports/baseline-validation.md"],
+  "suspected_mechanism": "Sequentially executing multiple costly behaviors for every sheep consumes most of the fixed NFE before population-level environmental feedback can change behavior, while repeated migration can amplify the imbalance unpredictably.",
+  "proposed_modification": "For every active sheep and generation, select exactly one of grazing, collective migration, or regrouping from its stagnation state; generate and evaluate exactly one offspring, then perform one population/archive update. Retain N=100, fixed baseline step schedules, external archive, constraints, and no success-history adaptation.",
+  "expected_effects": ["At least 10 percent lower runtime or time-to-95-HV than the initial incumbent at equal NFE", "More environmental-selection cycles and higher normalized-HV AUC", "No mean final normalized-HV loss greater than 0.005 after intermediate evidence"],
+  "possible_downsides": ["Shallower local exploitation can reduce final precision", "One-shot switching probabilities can overuse migration on multimodal problems", "More frequent archive sorting may consume some of the saved runtime"],
+  "affected_components": ["mosfmo/algorithm.py behavioral state machine", "offspring generation", "population replacement"],
+  "related_hypotheses": [],
+  "novelty": "Controlled replacement of SFMO's sequential multi-behavior cycle by an energy-budgeted individual one-shot state decision, expressed as sheep grazing/migration/regrouping rather than a generic operator mixture.",
+  "falsification_evidence": ["Quick runtime improvement below 10 percent without at least 1 percent normalized-HV/AUC gain", "Any development-instance final normalized-HV loss above 0.02", "Intermediate mean normalized-HV loss above 0.005 or IGD+ regression above 5 percent without compensating locked efficiency acceptance"],
+  "planned_stages": ["static", "smoke", "quick"],
+  "status": "proposed",
+  "extensions": {"controlled_variables": ["population 100", "archive 100", "step radii", "paired initialization", "constraint handling", "NFE budgets"]}
+}

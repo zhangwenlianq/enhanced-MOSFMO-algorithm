@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openai.local/autoresearch/state.schema.json",
+  "title": "AutoResearch State",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["state_version", "contract_fingerprint", "protected_manifest_fingerprint", "phase", "state_revision", "created_at", "updated_at", "active_experiment", "initial_baseline", "incumbent", "budget_used", "last_completed_action", "next_action", "terminal"],
+  "properties": {
+    "state_version": {"const": "1.0"},
+    "contract_fingerprint": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "protected_manifest_fingerprint": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"},
+    "phase": {"enum": ["BUILD", "BASELINE_VALIDATION", "AUTONOMOUS_RESEARCH", "FINALIZATION", "COMPLETED", "BLOCKED", "INVALID_PROTOCOL"]},
+    "state_revision": {"type": "integer", "minimum": 0},
+    "created_at": {"type": "string", "format": "date-time"},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "active_experiment": {"type": ["object", "null"]},
+    "initial_baseline": {
+      "type": "object", "additionalProperties": false,
+      "required": ["candidate_id", "code_reference", "result_refs", "validated"],
+      "properties": {
+        "candidate_id": {"type": ["string", "null"]},
+        "code_reference": {"type": ["string", "null"]},
+        "result_refs": {"type": "array", "items": {"type": "string"}},
+        "validated": {"type": "boolean"}
+      }
+    },
+    "incumbent": {
+      "type": "object", "additionalProperties": false,
+      "required": ["candidate_id", "code_reference", "result_refs"],
+      "properties": {
+        "candidate_id": {"type": ["string", "null"]},
+        "code_reference": {"type": ["string", "null"]},
+        "result_refs": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "budget_used": {"type": "object", "additionalProperties": {"type": "number", "minimum": 0}},
+    "last_completed_action": {"type": "string"},
+    "next_action": {"type": "string"},
+    "terminal": {
+      "type": ["object", "null"],
+      "properties": {
+        "reason": {"type": "string"},
+        "target_reached": {"type": ["boolean", "null"]},
+        "resume_requirement": {"type": ["string", "null"]},
+        "report_path": {"type": ["string", "null"]},
+        "resume_phase": {"type": ["string", "null"], "enum": ["BUILD", "BASELINE_VALIDATION", "AUTONOMOUS_RESEARCH", "FINALIZATION", null]}
+      },
+      "required": ["reason", "target_reached", "resume_requirement", "report_path", "resume_phase"],
+      "additionalProperties": false
+    }
+  }
+}

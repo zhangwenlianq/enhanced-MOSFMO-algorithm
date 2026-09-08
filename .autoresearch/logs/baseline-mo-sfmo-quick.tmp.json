@@ -1,0 +1,1911 @@
+{
+  "aggregates": {
+    "dascmop1_d30_i4": {
+      "evaluation_count": {
+        "median": 12000.0,
+        "q1": 12000.0,
+        "q3": 12000.0
+      },
+      "feasible_archive_success": {
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "feasible_solution_rate": {
+        "median": 0.154,
+        "q1": 0.11058333333333334,
+        "q3": 0.20174999999999998
+      },
+      "igd_plus": {
+        "median": 0.7365627824593454,
+        "q1": 0.6283595921699783,
+        "q3": 0.9244360749706977
+      },
+      "normalized_hv": {
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "normalized_hv_auc": {
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "runtime_seconds": {
+        "median": 0.18070299999089912,
+        "q1": 0.17319057500571944,
+        "q3": 0.18204387500009034
+      }
+    },
+    "dtlz2_m3_d12": {
+      "evaluation_count": {
+        "median": 12000.0,
+        "q1": 12000.0,
+        "q3": 12000.0
+      },
+      "feasible_archive_success": {
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "feasible_solution_rate": {
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "igd_plus": {
+        "median": 0.2517233380743962,
+        "q1": 0.2192451710872625,
+        "q3": 0.27106406100145275
+      },
+      "normalized_hv": {
+        "median": 0.35886773039465225,
+        "q1": 0.34602810261557,
+        "q3": 0.45651010227097316
+      },
+      "normalized_hv_auc": {
+        "median": 0.29928192790188407,
+        "q1": 0.28770822771619675,
+        "q3": 0.3318532525560899
+      },
+      "runtime_seconds": {
+        "median": 0.22341964999213815,
+        "q1": 0.22033337499306072,
+        "q3": 0.22430987501866184
+      }
+    },
+    "dtlz7_m3_d22": {
+      "evaluation_count": {
+        "median": 12000.0,
+        "q1": 12000.0,
+        "q3": 12000.0
+      },
+      "feasible_archive_success": {
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "feasible_solution_rate": {
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "igd_plus": {
+        "median": 2.7341077766730666,
+        "q1": 2.6385552399686887,
+        "q3": 2.827621843435984
+      },
+      "normalized_hv": {
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "normalized_hv_auc": {
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "runtime_seconds": {
+        "median": 0.21723735000705346,
+        "q1": 0.21515667502535507,
+        "q3": 0.2199552749953
+      }
+    },
+    "zdt1_d30": {
+      "evaluation_count": {
+        "median": 12000.0,
+        "q1": 12000.0,
+        "q3": 12000.0
+      },
+      "feasible_archive_success": {
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "feasible_solution_rate": {
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "igd_plus": {
+        "median": 2.2638588568951272,
+        "q1": 2.17639720009037,
+        "q3": 2.2980702543615203
+      },
+      "normalized_hv": {
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "normalized_hv_auc": {
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "runtime_seconds": {
+        "median": 0.20208804996218532,
+        "q1": 0.20013097500486765,
+        "q3": 0.2040714000031585
+      }
+    },
+    "zdt3_d30": {
+      "evaluation_count": {
+        "median": 12000.0,
+        "q1": 12000.0,
+        "q3": 12000.0
+      },
+      "feasible_archive_success": {
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "feasible_solution_rate": {
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "igd_plus": {
+        "median": 1.128352455300515,
+        "q1": 1.0806462484101533,
+        "q3": 1.166758400840237
+      },
+      "normalized_hv": {
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "normalized_hv_auc": {
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "runtime_seconds": {
+        "median": 0.1945409999752883,
+        "q1": 0.19357574998866767,
+        "q3": 0.19948762499552686
+      }
+    },
+    "zdt4_d10": {
+      "evaluation_count": {
+        "median": 12000.0,
+        "q1": 12000.0,
+        "q3": 12000.0
+      },
+      "feasible_archive_success": {
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "feasible_solution_rate": {
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "igd_plus": {
+        "median": 67.34610388709801,
+        "q1": 60.305028485623566,
+        "q3": 70.73559486704825
+      },
+      "normalized_hv": {
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "normalized_hv_auc": {
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "runtime_seconds": {
+        "median": 0.1855459499929566,
+        "q1": 0.18537330001709051,
+        "q3": 0.18754082500527147
+      }
+    }
+  },
+  "benchmark_runs": [
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt1_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 1.729676705056078,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.21025189995998517,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 3,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.21025189995998517,
+      "seed": 101,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt1_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 1.9433212690908361,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.20201149996137246,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 4,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.20201149996137246,
+      "seed": 211,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt1_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.461729552942038,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.19523389998357743,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 93,
+          "outer_iterations": 4,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.19523389998357743,
+      "seed": 307,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt1_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.254089177090215,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.20431469997856766,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 89,
+          "outer_iterations": 2,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.20431469997856766,
+      "seed": 401,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt1_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.259251381663319,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.20399030001135543,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 99,
+          "outer_iterations": 1,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.20399030001135543,
+      "seed": 503,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt1_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.2684663321269354,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.20216459996299818,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 5,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.20216459996299818,
+      "seed": 601,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt1_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.322735065544166,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.19876530003966764,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 93,
+          "outer_iterations": 3,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.19876530003966764,
+      "seed": 701,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt1_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.289848650633972,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.20058619999326766,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 4,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.20058619999326766,
+      "seed": 809,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt3_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 1.0204008266789923,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.19358189997728914,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 82,
+          "outer_iterations": 5,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.19358189997728914,
+      "seed": 101,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt3_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 0.9841339563760563,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.1978876999928616,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 4,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.1978876999928616,
+      "seed": 211,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt3_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 1.2481146532490641,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.19355730002280325,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 3,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.19355730002280325,
+      "seed": 307,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt3_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 1.1007280556538737,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.1951328999712132,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 88,
+          "outer_iterations": 4,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.1951328999712132,
+      "seed": 401,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt3_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 1.1399775800936738,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.19394909997936338,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 8,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.19394909997936338,
+      "seed": 503,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt3_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 1.1654894379901701,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.20428740000352263,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 6,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.20428740000352263,
+      "seed": 601,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt3_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 1.1167273305073566,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.19109690003097057,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 3,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.19109690003097057,
+      "seed": 701,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt3_d30",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 1.1705652893904377,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.20526139996945858,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 4,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.20526139996945858,
+      "seed": 809,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt4_d10",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 57.207404121616214,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.18204980000155047,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 6,
+          "outer_iterations": 52,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.18204980000155047,
+      "seed": 101,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt4_d10",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 60.868736517786786,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.18629260000307113,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 33,
+          "outer_iterations": 7,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.18629260000307113,
+      "seed": 211,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt4_d10",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 70.68649520406176,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.18548549996921793,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 54,
+          "outer_iterations": 13,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.18548549996921793,
+      "seed": 307,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt4_d10",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 67.14538528207773,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.1852245000191033,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 6,
+          "outer_iterations": 15,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.1852245000191033,
+      "seed": 401,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt4_d10",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 67.5468224921183,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.1912855000118725,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 13,
+          "outer_iterations": 6,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.1912855000118725,
+      "seed": 503,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt4_d10",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 58.613904389133914,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.20432369998889044,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 92,
+          "outer_iterations": 5,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.20432369998889044,
+      "seed": 601,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt4_d10",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 70.88289385600773,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.18560640001669526,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 14,
+          "outer_iterations": 6,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.18560640001669526,
+      "seed": 701,
+      "valid": true
+    },
+    {
+      "benchmark_id": "zdt",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "zdt4_d10",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 71.35068601863959,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.1854229000164196,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 18,
+          "outer_iterations": 6,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.1854229000164196,
+      "seed": 809,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz2_m3_d12",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 0.2356303951079684,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.36850898832774065,
+        "normalized_hv_auc": 0.2826784139870193,
+        "runtime_seconds": 0.22384699998656288,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 5,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.22384699998656288,
+      "seed": 101,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz2_m3_d12",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 0.2690098203455734,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.3449713383087156,
+        "normalized_hv_auc": 0.29826006237097413,
+        "runtime_seconds": 0.22643199999583885,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 5,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.22643199999583885,
+      "seed": 211,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz2_m3_d12",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 0.21922718732931204,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.46360694458937574,
+        "normalized_hv_auc": 0.34029567867442456,
+        "runtime_seconds": 0.22216699999989942,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 4,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.22216699999989942,
+      "seed": 307,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz2_m3_d12",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 0.27722678296909065,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.33258233801541714,
+        "normalized_hv_auc": 0.300303793432794,
+        "runtime_seconds": 0.21274069999344647,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 3,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.21274069999344647,
+      "seed": 401,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz2_m3_d12",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 0.21925116567324596,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.4563181537774369,
+        "normalized_hv_auc": 0.3357057902059149,
+        "runtime_seconds": 0.2148324999725446,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 5,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.2148324999725446,
+      "seed": 503,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz2_m3_d12",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 0.20932718947422274,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.45708594775158196,
+        "normalized_hv_auc": 0.33056907333948155,
+        "runtime_seconds": 0.22483389999251813,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 3,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.22483389999251813,
+      "seed": 601,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz2_m3_d12",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 0.267816281040824,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.34638035738452144,
+        "normalized_hv_auc": 0.28938483229258927,
+        "runtime_seconds": 0.22299229999771342,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 4,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.22299229999771342,
+      "seed": 701,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz2_m3_d12",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 0.27913836781143264,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.3492264724615639,
+        "normalized_hv_auc": 0.2652421386529155,
+        "runtime_seconds": 0.2241352000273764,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 3,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.2241352000273764,
+      "seed": 809,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz7_m3_d22",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.4233828153695516,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.2158081000088714,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 98,
+          "outer_iterations": 3,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.2158081000088714,
+      "seed": 101,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz7_m3_d22",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.8151666203540002,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.21866660000523552,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 5,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.21866660000523552,
+      "seed": 211,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz7_m3_d22",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.7339278904898356,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.220593000005465,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 6,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.220593000005465,
+      "seed": 307,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz7_m3_d22",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.585524446801034,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.21086029999423772,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 5,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.21086029999423772,
+      "seed": 401,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz7_m3_d22",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.6562321710245738,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.21974269999191165,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 7,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.21974269999191165,
+      "seed": 503,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz7_m3_d22",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.8649875126819344,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.2153389000450261,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 9,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.2153389000450261,
+      "seed": 601,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz7_m3_d22",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.7342876628562975,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.2207003000075929,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 8,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.2207003000075929,
+      "seed": 701,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dtlz",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 1.0,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dtlz7_m3_d22",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 1.0,
+        "igd_plus": 2.8656413538755103,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.214609999966342,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 100,
+          "outer_iterations": 3,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.214609999966342,
+      "seed": 809,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dascmop",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 0.1585,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dascmop1_d30_i4",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 0.1585,
+        "igd_plus": 0.8357452048100612,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.18066809995798394,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 1,
+          "outer_iterations": 5,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.18066809995798394,
+      "seed": 101,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dascmop",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 0.1495,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dascmop1_d30_i4",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 0.1495,
+        "igd_plus": 0.6373803601086295,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.19264349999139085,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 14,
+          "outer_iterations": 6,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.19264349999139085,
+      "seed": 211,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dascmop",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 0.2075,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dascmop1_d30_i4",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 0.2075,
+        "igd_plus": 0.6291458875498878,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.16552579996641725,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 2,
+          "outer_iterations": 37,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.16552579996641725,
+      "seed": 307,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dascmop",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 0.19983333333333334,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dascmop1_d30_i4",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 0.19983333333333334,
+        "igd_plus": 0.6260007060302499,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.182101100042928,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 1,
+          "outer_iterations": 10,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.182101100042928,
+      "seed": 401,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dascmop",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 0.044083333333333335,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dascmop1_d30_i4",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 0.044083333333333335,
+        "igd_plus": 1.259560187886476,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.17574550001882017,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 1,
+          "outer_iterations": 15,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.17574550001882017,
+      "seed": 503,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dascmop",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 0.21941666666666668,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dascmop1_d30_i4",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 0.21941666666666668,
+        "igd_plus": 0.5849151897803591,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.004047631653757841,
+        "normalized_hv_auc": 0.001851391852196479,
+        "runtime_seconds": 0.18202479998581111,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 3,
+          "outer_iterations": 9,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.18202479998581111,
+      "seed": 601,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dascmop",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 0.13275,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dascmop1_d30_i4",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 0.13275,
+        "igd_plus": 0.8614145591217361,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.1807379000238143,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 1,
+          "outer_iterations": 9,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.1807379000238143,
+      "seed": 701,
+      "valid": true
+    },
+    {
+      "benchmark_id": "dascmop",
+      "constraints": {
+        "feasible_archive_success": true,
+        "feasible_solution_rate": 0.042166666666666665,
+        "right_censored_95_hv": true
+      },
+      "error": null,
+      "evaluation_count": 12000,
+      "instance_id": "dascmop1_d30_i4",
+      "metrics": {
+        "evaluation_count": 12000.0,
+        "feasible_archive_success": 1.0,
+        "feasible_solution_rate": 0.042166666666666665,
+        "igd_plus": 1.113500622517582,
+        "nfe_to_95_hv": null,
+        "normalized_hv": 0.0,
+        "normalized_hv_auc": 0.0,
+        "runtime_seconds": 0.1590969999670051,
+        "time_to_95_hv_seconds": null
+      },
+      "resource_usage": {
+        "details": {
+          "archive_size": 1,
+          "outer_iterations": 43,
+          "repeated_grazing": true,
+          "repeated_migration": true
+        },
+        "primary_used": 12000
+      },
+      "runtime_seconds": 0.1590969999670051,
+      "seed": 809,
+      "valid": true
+    }
+  ],
+  "candidate_id": "baseline-mo-sfmo",
+  "code_reference": "sha256:7ad39f96eb49abce6337a920ab85b04e0e8175538fb8939e9929f8f856ddb796:mosfmo/baseline.py",
+  "completed_at": "2026-09-08T07:27:01.069300Z",
+  "contract_fingerprint": "3e605a2918f27fe21754b5a1a7a94e6e62b19bc7c592d70684d28f0fc4499135",
+  "decision_metadata": {
+    "decided_at": null,
+    "decision": null,
+    "reason": null,
+    "rule_results": []
+  },
+  "errors": [],
+  "experiment_id": "baseline-mo-sfmo-quick",
+  "extensions": {},
+  "parent_candidate_id": null,
+  "resource_budget": {
+    "limit": 576000,
+    "primary_unit": "objective_vector_evaluations",
+    "used": 576000,
+    "wall_time_seconds": 9.624608099809848
+  },
+  "result_version": "1.0",
+  "run_configuration": {
+    "benchmark_instance_ids": [
+      "zdt1_d30",
+      "zdt3_d30",
+      "zdt4_d10",
+      "dtlz2_m3_d12",
+      "dtlz7_m3_d22",
+      "dascmop1_d30_i4"
+    ],
+    "budget_per_run": 12000,
+    "parameters": {
+      "algorithm": "mo_sfmo",
+      "schema_stage_semantics": "This schema stage is the scientific intermediate screen: one initial-incumbent slot plus at most four candidates; apply accuracy or efficiency acceptance and every non-inferiority rule."
+    },
+    "seeds": [
+      101,
+      211,
+      307,
+      401,
+      503,
+      601,
+      701,
+      809
+    ]
+  },
+  "stage": "quick",
+  "started_at": "2026-09-08T07:26:48.435328Z",
+  "statistical_comparisons": [],
+  "status": "completed",
+  "valid": true
+}
